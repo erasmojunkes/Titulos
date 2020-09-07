@@ -1,0 +1,775 @@
+11/11/2015 09:01:02.371 Conectando em CISSODBC
+11/11/2015 09:01:02.371 Tentativa de conexão com a última senha utilizada
+11/11/2015 09:01:04.269 Conexão a CISSODBC usuário dba estabelecida com sucesso
+11/11/2015 09:01:04.300 --> fnv_getsgbd: DB2 [1]
+11/11/2015 09:57:31.649 Conectando em CISSODBC
+11/11/2015 09:57:31.681 Tentativa de conexão com a última senha utilizada
+11/11/2015 09:57:31.759 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+11/11/2015 09:57:31.759 Utilizando senha #1
+11/11/2015 09:57:31.774 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+16/11/2015 16:32:39.771 Conectando em CISSODBC
+16/11/2015 16:32:39.851 Tentativa de conexão com a última senha utilizada
+16/11/2015 16:32:43.688 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+16/11/2015 16:32:43.710 Utilizando senha #1
+16/11/2015 16:32:43.725 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+26/11/2015 10:21:26.633 Conectando em CISSODBC
+26/11/2015 10:21:26.650 Tentativa de conexão com a última senha utilizada
+26/11/2015 10:21:26.873 Conexão a CISSODBC usuário dba estabelecida com sucesso
+26/11/2015 10:21:26.880 --> fnv_getsgbd: DB2 [1]
+01/12/2015 17:36:18.097 Conectando em CISSODBC
+01/12/2015 17:36:18.441 Tentativa de conexão com a última senha utilizada
+01/12/2015 17:36:19.269 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+01/12/2015 17:36:19.285 Utilizando senha #1
+01/12/2015 17:36:19.300 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+01/12/2015 17:36:26.368 Conectando em CISSODBC
+01/12/2015 17:36:26.399 Tentativa de conexão com a última senha utilizada
+01/12/2015 17:36:26.571 Conexão a CISSODBC usuário dba estabelecida com sucesso
+01/12/2015 17:36:26.571 --> fnv_getsgbd: DB2 [1]
+09/12/2015 16:20:17.788 Conectando em CISSODBC
+09/12/2015 16:20:17.834 Tentativa de conexão com a última senha utilizada
+09/12/2015 16:20:18.147 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/12/2015 16:20:18.147 --> fnv_getsgbd: DB2 [1]
+09/12/2015 16:29:34.235 Conectando em CISSODBC
+09/12/2015 16:29:34.282 Tentativa de conexão com a última senha utilizada
+09/12/2015 16:29:34.344 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+09/12/2015 16:29:34.344 Utilizando senha #1
+09/12/2015 16:29:34.407 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+09/12/2015 16:29:43.676 Conectando em CISSODBC
+09/12/2015 16:29:43.707 Tentativa de conexão com a última senha utilizada
+09/12/2015 16:29:43.880 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/12/2015 16:29:43.880 --> fnv_getsgbd: DB2 [1]
+15/12/2015 11:03:23.541 Conectando em CISSODBC
+15/12/2015 11:03:23.588 Tentativa de conexão com a última senha utilizada
+15/12/2015 11:03:30.227 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/12/2015 11:03:30.243 --> fnv_getsgbd: DB2 [1]
+16/12/2015 16:52:15.088 Conectando em CISSODBC
+16/12/2015 16:52:15.151 Tentativa de conexão com a última senha utilizada
+16/12/2015 16:52:15.713 Conexão a CISSODBC usuário dba estabelecida com sucesso
+16/12/2015 16:52:15.729 --> fnv_getsgbd: DB2 [1]
+11/01/2016 17:54:37.343 Conectando em CISSODBC
+11/01/2016 17:54:37.356 Tentativa de conexão com a última senha utilizada
+11/01/2016 17:54:37.389 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.400 Utilizando senha #1
+11/01/2016 17:54:37.426 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.437 Utilizando senha #2
+11/01/2016 17:54:37.588 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.600 Utilizando senha #3
+11/01/2016 17:54:37.625 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.635 Utilizando senha #4
+11/01/2016 17:54:37.712 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.722 Utilizando senha #5
+11/01/2016 17:54:37.754 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.766 Utilizando senha #6
+11/01/2016 17:54:37.788 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+11/01/2016 17:54:37.798 Utilizando senha #7
+11/01/2016 17:54:37.845 Conexão a CISSODBC usuário dba estabelecida com sucesso
+11/01/2016 17:54:37.859 --> fnv_getsgbd: DB2 [1]
+14/04/2016 19:45:53.092 Conectando em CISSODBC
+14/04/2016 19:45:53.108 Tentativa de conexão com a última senha utilizada
+14/04/2016 19:45:53.561 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/04/2016 19:45:53.577 --> fnv_getsgbd: DB2 [1]
+09/05/2016 11:14:33.491 Conectando em CISSODBC
+09/05/2016 11:14:33.960 Tentativa de conexão com a última senha utilizada
+09/05/2016 11:14:34.976 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+09/05/2016 11:14:35.194 Utilizando senha #1
+09/05/2016 11:14:35.226 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/05/2016 11:14:35.226 --> fnv_getsgbd: DB2 [1]
+24/05/2016 10:52:08.765 Conectando em CISSODBC
+24/05/2016 10:52:08.812 Tentativa de conexão com a última senha utilizada
+24/05/2016 10:52:09.280 Conexão a CISSODBC usuário dba estabelecida com sucesso
+24/05/2016 10:52:09.296 --> fnv_getsgbd: DB2 [1]
+24/05/2016 10:56:51.636 Conectando em CISSODBC
+24/05/2016 10:56:51.683 Tentativa de conexão com a última senha utilizada
+24/05/2016 10:56:51.995 Conexão a CISSODBC usuário dba estabelecida com sucesso
+24/05/2016 10:56:52.011 --> fnv_getsgbd: DB2 [1]
+30/05/2016 15:13:27.660 Conectando em CISSODBC
+30/05/2016 15:13:27.660 Tentativa de conexão com a última senha utilizada
+30/05/2016 15:13:27.845 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/05/2016 15:13:27.860 --> fnv_getsgbd: DB2 [1]
+23/06/2016 08:35:02.619 Conectando em CISSODBC
+23/06/2016 08:35:02.629 Tentativa de conexão com a última senha utilizada
+23/06/2016 08:35:02.857 Conexão a CISSODBC usuário dba estabelecida com sucesso
+23/06/2016 08:35:02.868 --> fnv_getsgbd: DB2 [1]
+23/06/2016 16:26:01.740 Conectando em CISSODBC
+23/06/2016 16:26:01.740 Tentativa de conexão com a última senha utilizada
+23/06/2016 16:26:01.902 Conexão a CISSODBC usuário dba estabelecida com sucesso
+23/06/2016 16:26:01.914 --> fnv_getsgbd: DB2 [1]
+06/07/2016 09:47:37.865 Conectando em CISSODBC
+06/07/2016 09:47:37.878 Tentativa de conexão com a última senha utilizada
+06/07/2016 09:47:38.010 Conexão a CISSODBC usuário dba estabelecida com sucesso
+06/07/2016 09:47:38.034 --> fnv_getsgbd: DB2 [1]
+25/07/2016 14:57:38.664 Conectando em CISSODBC
+25/07/2016 14:57:38.679 Tentativa de conexão com a última senha utilizada
+25/07/2016 14:57:38.880 Conexão a CISSODBC usuário dba estabelecida com sucesso
+25/07/2016 14:57:38.895 --> fnv_getsgbd: DB2 [1]
+26/07/2016 15:07:46.512 Conectando em CISSODBC
+26/07/2016 15:07:46.519 Tentativa de conexão com a última senha utilizada
+26/07/2016 15:07:46.688 Conexão a CISSODBC usuário dba estabelecida com sucesso
+26/07/2016 15:07:46.699 --> fnv_getsgbd: DB2 [1]
+03/08/2016 09:27:04.438 Conectando em CISSODBC
+03/08/2016 09:27:04.453 Tentativa de conexão com a última senha utilizada
+03/08/2016 09:27:05.211 Conexão a CISSODBC usuário dba estabelecida com sucesso
+03/08/2016 09:27:05.295 --> fnv_getsgbd: DB2 [1]
+02/09/2016 09:16:22.401 Conectando em CISSODBC
+02/09/2016 09:16:22.416 Tentativa de conexão com a última senha utilizada
+02/09/2016 09:16:22.438 Conexão a CISSODBC usuário dba estabelecida com sucesso
+02/09/2016 09:16:22.438 --> fnv_getsgbd: DB2 [1]
+22/09/2016 14:13:02.964 Conectando em CISSODBC
+22/09/2016 14:13:02.964 Tentativa de conexão com a última senha utilizada
+22/09/2016 14:13:03.349 Conexão a CISSODBC usuário dba estabelecida com sucesso
+22/09/2016 14:13:03.380 --> fnv_getsgbd: DB2 [1]
+26/09/2016 17:49:12.257 Conectando em CISSODBC
+26/09/2016 17:49:12.265 Tentativa de conexão com a última senha utilizada
+26/09/2016 17:49:12.568 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.576 Utilizando senha #1
+26/09/2016 17:49:12.677 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.727 Utilizando senha #2
+26/09/2016 17:49:12.757 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.764 Utilizando senha #3
+26/09/2016 17:49:12.793 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.802 Utilizando senha #4
+26/09/2016 17:49:12.832 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.839 Utilizando senha #5
+26/09/2016 17:49:12.869 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.877 Utilizando senha #6
+26/09/2016 17:49:12.907 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+26/09/2016 17:49:12.915 Utilizando senha #7
+26/09/2016 17:49:12.937 Conexão a CISSODBC usuário dba estabelecida com sucesso
+26/09/2016 17:49:12.951 --> fnv_getsgbd: DB2 [1]
+30/09/2016 15:11:23.939 Conectando em CISSODBC
+30/09/2016 15:11:23.947 Tentativa de conexão com a última senha utilizada
+30/09/2016 15:11:24.138 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/09/2016 15:11:24.147 --> fnv_getsgbd: DB2 [1]
+07/10/2016 10:56:42.939 Conectando em CISSODBC
+07/10/2016 10:56:42.939 Tentativa de conexão com a última senha utilizada
+07/10/2016 10:56:43.124 Conexão a CISSODBC usuário dba estabelecida com sucesso
+07/10/2016 10:56:43.140 --> fnv_getsgbd: DB2 [1]
+20/10/2016 09:45:02.285 Conectando em CISSODBC
+20/10/2016 09:45:02.290 Tentativa de conexão com a última senha utilizada
+20/10/2016 09:45:02.527 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/10/2016 09:45:02.534 --> fnv_getsgbd: DB2 [1]
+20/10/2016 09:49:21.938 Conectando em CISSODBC
+20/10/2016 09:49:21.943 Tentativa de conexão com a última senha utilizada
+20/10/2016 09:49:22.188 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/10/2016 09:49:22.196 --> fnv_getsgbd: DB2 [1]
+08/11/2016 17:37:40.797 Conectando em CISSODBC
+08/11/2016 17:37:40.797 Tentativa de conexão com a última senha utilizada
+08/11/2016 17:37:41.863 Conexão a CISSODBC usuário dba estabelecida com sucesso
+08/11/2016 17:37:41.867 --> fnv_getsgbd: DB2 [1]
+10/11/2016 17:19:02.719 Conectando em CISSODBC
+10/11/2016 17:19:02.726 Tentativa de conexão com a última senha utilizada
+10/11/2016 17:19:02.939 Conexão a CISSODBC usuário dba estabelecida com sucesso
+10/11/2016 17:19:02.949 --> fnv_getsgbd: DB2 [1]
+18/11/2016 11:14:56.467 Conectando em CISSODBC
+18/11/2016 11:14:56.475 Tentativa de conexão com a última senha utilizada
+18/11/2016 11:14:57.681 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/11/2016 11:14:57.691 --> fnv_getsgbd: DB2 [1]
+30/11/2016 15:35:07.773 Conectando em CISSODBC
+30/11/2016 15:35:07.783 Tentativa de conexão com a última senha utilizada
+30/11/2016 15:35:08.002 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/11/2016 15:35:08.031 --> fnv_getsgbd: DB2 [1]
+30/11/2016 15:35:19.291 Conectando em CISSODBC
+30/11/2016 15:35:19.325 Tentativa de conexão com a última senha utilizada
+30/11/2016 15:35:19.671 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/11/2016 15:35:19.726 --> fnv_getsgbd: DB2 [1]
+17/01/2017 10:49:28.118 Conectando em CISSODBC
+17/01/2017 10:49:28.138 Tentativa de conexão com a última senha utilizada
+17/01/2017 10:49:29.109 Conexão a CISSODBC usuário dba estabelecida com sucesso
+17/01/2017 10:49:29.113 --> fnv_getsgbd: DB2 [1]
+17/01/2017 11:07:09.927 Conectando em CISSODBC
+17/01/2017 11:07:09.948 Tentativa de conexão com a última senha utilizada
+17/01/2017 11:07:10.440 Conexão a CISSODBC usuário dba estabelecida com sucesso
+17/01/2017 11:07:10.450 --> fnv_getsgbd: DB2 [1]
+26/01/2017 16:53:05.656 Conectando em CISSODBC
+26/01/2017 16:53:05.676 Tentativa de conexão com a última senha utilizada
+26/01/2017 16:53:06.813 Conexão a CISSODBC usuário dba estabelecida com sucesso
+26/01/2017 16:53:06.813 --> fnv_getsgbd: DB2 [1]
+30/01/2017 14:37:53.312 Conectando em CISSODBC
+30/01/2017 14:37:53.332 Tentativa de conexão com a última senha utilizada
+30/01/2017 14:37:54.322 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/01/2017 14:37:54.322 --> fnv_getsgbd: DB2 [1]
+31/01/2017 09:32:08.184 Conectando em CISSODBC
+31/01/2017 09:32:08.194 Tentativa de conexão com a última senha utilizada
+31/01/2017 09:32:09.404 Conexão a CISSODBC usuário dba estabelecida com sucesso
+31/01/2017 09:32:09.404 --> fnv_getsgbd: DB2 [1]
+03/02/2017 15:43:08.507 Conectando em CISSODBC
+03/02/2017 15:43:08.518 Tentativa de conexão com a última senha utilizada
+03/02/2017 15:43:09.930 Conexão a CISSODBC usuário dba estabelecida com sucesso
+03/02/2017 15:43:09.936 --> fnv_getsgbd: DB2 [1]
+11/05/2017 17:35:39.417 Conectando em CISSODBC
+11/05/2017 17:35:39.450 Tentativa de conexão com a última senha utilizada
+11/05/2017 17:35:39.643 Conexão a CISSODBC usuário dba estabelecida com sucesso
+11/05/2017 17:35:39.649 --> fnv_getsgbd: DB2 [1]
+25/05/2017 14:17:47.439 Conectando em CISSODBC
+25/05/2017 14:17:47.459 Tentativa de conexão com a última senha utilizada
+25/05/2017 14:17:47.649 Conexão a CISSODBC usuário dba estabelecida com sucesso
+25/05/2017 14:17:47.669 --> fnv_getsgbd: DB2 [1]
+29/05/2017 15:48:43.651 Conectando em CISSODBC
+29/05/2017 15:48:43.661 Tentativa de conexão com a última senha utilizada
+29/05/2017 15:48:43.888 Conexão a CISSODBC usuário dba estabelecida com sucesso
+29/05/2017 15:48:43.893 --> fnv_getsgbd: DB2 [1]
+29/05/2017 16:21:38.948 Conectando em CISSODBC
+29/05/2017 16:21:38.956 Tentativa de conexão com a última senha utilizada
+29/05/2017 16:21:40.238 Conexão a CISSODBC usuário dba estabelecida com sucesso
+29/05/2017 16:21:40.244 --> fnv_getsgbd: DB2 [1]
+29/05/2017 16:21:40.410 Conectando em CISSODBC
+29/05/2017 16:21:40.419 Tentativa de conexão com a última senha utilizada
+29/05/2017 16:21:40.571 Conexão a CISSODBC usuário dba estabelecida com sucesso
+29/05/2017 16:21:40.577 --> fnv_getsgbd: DB2 [1]
+30/05/2017 08:17:25.875 Conectando em CISSODBC
+30/05/2017 08:17:25.885 Tentativa de conexão com a última senha utilizada
+30/05/2017 08:17:27.265 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/05/2017 08:17:27.275 --> fnv_getsgbd: DB2 [1]
+30/05/2017 09:59:27.754 Conectando em CISSODBC
+30/05/2017 09:59:27.764 Tentativa de conexão com a última senha utilizada
+30/05/2017 09:59:29.325 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/05/2017 09:59:29.330 --> fnv_getsgbd: DB2 [1]
+30/05/2017 10:10:20.252 Conectando em CISSODBC
+30/05/2017 10:10:20.262 Tentativa de conexão com a última senha utilizada
+30/05/2017 10:10:20.415 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/05/2017 10:10:20.421 --> fnv_getsgbd: DB2 [1]
+31/05/2017 09:21:49.610 Conectando em CISSODBC
+31/05/2017 09:21:49.621 Tentativa de conexão com a última senha utilizada
+31/05/2017 09:21:49.809 Conexão a CISSODBC usuário dba estabelecida com sucesso
+31/05/2017 09:21:49.814 --> fnv_getsgbd: DB2 [1]
+27/06/2017 08:21:41.725 Conectando em CISSODBC
+27/06/2017 08:21:41.755 Tentativa de conexão com a última senha utilizada
+27/06/2017 08:21:41.935 Conexão a CISSODBC usuário dba estabelecida com sucesso
+27/06/2017 08:21:41.945 --> fnv_getsgbd: DB2 [1]
+05/07/2017 17:42:13.803 Conectando em CISSODBC
+05/07/2017 17:42:13.838 Tentativa de conexão com a última senha utilizada
+05/07/2017 17:42:14.038 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/07/2017 17:42:14.043 --> fnv_getsgbd: DB2 [1]
+20/07/2017 13:51:14.941 Conectando em CISSODBC
+20/07/2017 13:51:14.997 Tentativa de conexão com a última senha utilizada
+20/07/2017 13:51:16.310 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 13:51:16.316 --> fnv_getsgbd: DB2 [1]
+20/07/2017 13:51:56.764 Conectando em CISSODBC
+20/07/2017 13:51:56.773 Tentativa de conexão com a última senha utilizada
+20/07/2017 13:51:56.926 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 13:51:56.931 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:07:28.391 Conectando em CISSODBC
+20/07/2017 15:07:28.396 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:07:28.449 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:07:28.456 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:12:18.448 Conectando em CISSODBC
+20/07/2017 15:12:18.459 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:12:18.488 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:12:18.493 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:12:57.546 Conectando em CISSODBC
+20/07/2017 15:12:57.549 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:12:57.588 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:12:57.593 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:20:01.732 Conectando em CISSODBC
+20/07/2017 15:20:01.736 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:20:01.765 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:20:01.771 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:21:16.509 Conectando em CISSODBC
+20/07/2017 15:21:16.514 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:21:16.545 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:21:16.572 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:22:39.869 Conectando em CISSODBC
+20/07/2017 15:22:39.872 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:22:39.918 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:22:39.925 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:23:03.327 Conectando em CISSODBC
+20/07/2017 15:23:03.336 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:23:03.368 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:23:03.373 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:33:42.970 Conectando em CISSODBC
+20/07/2017 15:33:42.974 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:33:43.010 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:33:43.016 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:34:06.135 Conectando em CISSODBC
+20/07/2017 15:34:06.140 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:34:06.182 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:34:06.187 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:35:34.233 Conectando em CISSODBC
+20/07/2017 15:35:34.238 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:35:34.271 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:35:34.276 --> fnv_getsgbd: DB2 [1]
+20/07/2017 15:36:34.359 Conectando em CISSODBC
+20/07/2017 15:36:34.364 Tentativa de conexão com a última senha utilizada
+20/07/2017 15:36:34.417 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/07/2017 15:36:34.421 --> fnv_getsgbd: DB2 [1]
+09/08/2017 16:29:05.359 Conectando em CISSODBC
+09/08/2017 16:29:05.374 Tentativa de conexão com a última senha utilizada
+09/08/2017 16:29:05.435 Conectando em CISSODBC
+09/08/2017 16:29:05.445 Tentativa de conexão com a última senha utilizada
+09/08/2017 16:29:05.684 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/08/2017 16:29:05.691 --> fnv_getsgbd: DB2 [1]
+09/08/2017 16:29:05.706 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/08/2017 16:29:05.713 --> fnv_getsgbd: DB2 [1]
+09/08/2017 16:29:17.237 Conectando em CISSODBC
+09/08/2017 16:29:17.246 Tentativa de conexão com a última senha utilizada
+09/08/2017 16:29:17.526 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/08/2017 16:29:17.583 --> fnv_getsgbd: DB2 [1]
+22/08/2017 09:18:21.357 Conectando em CISSODBC
+22/08/2017 09:18:21.374 Tentativa de conexão com a última senha utilizada
+22/08/2017 09:18:21.628 Conexão a CISSODBC usuário dba estabelecida com sucesso
+22/08/2017 09:18:21.635 --> fnv_getsgbd: DB2 [1]
+25/09/2017 16:59:09.660 Conectando em CISSODBC
+25/09/2017 16:59:09.670 Tentativa de conexão com a última senha utilizada
+25/09/2017 16:59:10.650 Conexão a CISSODBC usuário dba estabelecida com sucesso
+25/09/2017 16:59:10.650 --> fnv_getsgbd: DB2 [1]
+03/11/2017 17:20:58.081 Conectando em CISSODBC
+03/11/2017 17:20:58.127 Tentativa de conexão com a última senha utilizada
+03/11/2017 17:20:58.422 Conexão a CISSODBC usuário dba estabelecida com sucesso
+03/11/2017 17:20:58.429 --> fnv_getsgbd: DB2 [1]
+17/11/2017 09:12:42.458 Conectando em CISSODBC
+17/11/2017 09:12:42.467 Tentativa de conexão com a última senha utilizada
+17/11/2017 09:12:42.751 Conexão a CISSODBC usuário dba estabelecida com sucesso
+17/11/2017 09:12:42.757 --> fnv_getsgbd: DB2 [1]
+01/12/2017 09:02:39.680 Conectando em CISSODBC
+01/12/2017 09:02:39.700 Tentativa de conexão com a última senha utilizada
+01/12/2017 09:02:39.980 Conexão a CISSODBC usuário dba estabelecida com sucesso
+01/12/2017 09:02:39.990 --> fnv_getsgbd: DB2 [1]
+19/01/2018 08:21:28.205 Conectando em CISSODBC
+19/01/2018 08:21:28.215 Tentativa de conexão com a última senha utilizada
+19/01/2018 08:21:28.366 Conexão a CISSODBC usuário dba estabelecida com sucesso
+19/01/2018 08:21:28.376 --> fnv_getsgbd: DB2 [1]
+30/01/2018 15:01:25.584 Conectando em CISSODBC
+30/01/2018 15:01:25.594 Tentativa de conexão com a última senha utilizada
+30/01/2018 15:01:25.774 Conexão a CISSODBC usuário dba estabelecida com sucesso
+30/01/2018 15:01:25.784 --> fnv_getsgbd: DB2 [1]
+01/02/2018 08:52:57.753 Conectando em CISSODBC
+01/02/2018 08:52:57.783 Tentativa de conexão com a última senha utilizada
+01/02/2018 08:53:00.167 Conexão a CISSODBC usuário dba estabelecida com sucesso
+01/02/2018 08:53:00.173 --> fnv_getsgbd: DB2 [1]
+20/03/2018 10:26:09.977 Conectando em CISSODBC
+20/03/2018 10:26:09.999 Tentativa de conexão com a última senha utilizada
+20/03/2018 10:26:10.207 Conexão a CISSODBC usuário dba estabelecida com sucesso
+20/03/2018 10:26:10.216 --> fnv_getsgbd: DB2 [1]
+28/03/2018 15:46:03.878 Conectando em CISSODBC
+28/03/2018 15:46:03.934 Tentativa de conexão com a última senha utilizada
+28/03/2018 15:46:04.134 Conexão a CISSODBC usuário dba estabelecida com sucesso
+28/03/2018 15:46:04.134 --> fnv_getsgbd: DB2 [1]
+28/03/2018 16:17:57.163 Conectando em CISSODBC
+28/03/2018 16:17:59.228 Tentativa de conexão com a última senha utilizada
+28/03/2018 16:17:59.450 Conexão a CISSODBC usuário dba estabelecida com sucesso
+28/03/2018 16:17:59.450 --> fnv_getsgbd: DB2 [1]
+12/04/2018 14:56:49.264 Conectando em CISSODBC
+12/04/2018 14:56:49.283 Tentativa de conexão com a última senha utilizada
+12/04/2018 14:56:53.616 Conexão a CISSODBC usuário dba estabelecida com sucesso
+12/04/2018 14:56:53.857 --> fnv_getsgbd: DB2 [1]
+12/04/2018 14:58:31.484 Conectando em CISSODBC
+12/04/2018 14:58:31.502 Tentativa de conexão com a última senha utilizada
+12/04/2018 14:58:32.188 Conexão a CISSODBC usuário dba estabelecida com sucesso
+12/04/2018 14:58:32.196 --> fnv_getsgbd: DB2 [1]
+18/04/2018 15:54:55.664 Conectando em CISSODBC
+18/04/2018 15:54:55.669 Tentativa de conexão com a última senha utilizada
+18/04/2018 15:54:55.792 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 15:54:55.796 --> fnv_getsgbd: DB2 [1]
+18/04/2018 15:55:37.266 Conectando em CISSODBC
+18/04/2018 15:55:37.269 Tentativa de conexão com a última senha utilizada
+18/04/2018 15:55:37.389 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 15:55:37.396 --> fnv_getsgbd: DB2 [1]
+18/04/2018 15:56:09.377 Conectando em CISSODBC
+18/04/2018 15:56:09.389 Tentativa de conexão com a última senha utilizada
+18/04/2018 15:56:09.819 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 15:56:09.827 --> fnv_getsgbd: DB2 [1]
+18/04/2018 16:01:19.582 Conectando em CISSODBC
+18/04/2018 16:01:19.586 Tentativa de conexão com a última senha utilizada
+18/04/2018 16:01:19.715 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 16:01:19.721 --> fnv_getsgbd: DB2 [1]
+18/04/2018 16:03:39.294 Conectando em CISSODBC
+18/04/2018 16:03:39.303 Tentativa de conexão com a última senha utilizada
+18/04/2018 16:03:39.415 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 16:03:39.420 --> fnv_getsgbd: DB2 [1]
+18/04/2018 16:16:56.088 Conectando em CISSODBC
+18/04/2018 16:16:56.091 Tentativa de conexão com a última senha utilizada
+18/04/2018 16:16:56.213 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 16:16:56.216 --> fnv_getsgbd: DB2 [1]
+18/04/2018 16:23:15.079 Conectando em CISSODBC
+18/04/2018 16:23:15.082 Tentativa de conexão com a última senha utilizada
+18/04/2018 16:23:15.203 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 16:23:15.208 --> fnv_getsgbd: DB2 [1]
+18/04/2018 16:26:21.412 Conectando em CISSODBC
+18/04/2018 16:26:21.415 Tentativa de conexão com a última senha utilizada
+18/04/2018 16:26:21.533 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 16:26:21.537 --> fnv_getsgbd: DB2 [1]
+18/04/2018 16:29:53.946 Conectando em CISSODBC
+18/04/2018 16:29:53.958 Tentativa de conexão com a última senha utilizada
+18/04/2018 16:29:54.238 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/04/2018 16:29:54.243 --> fnv_getsgbd: DB2 [1]
+09/05/2018 11:12:59.474 Conectando em CISSODBC
+09/05/2018 11:12:59.489 Tentativa de conexão com a última senha utilizada
+09/05/2018 11:12:59.890 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/05/2018 11:12:59.890 --> fnv_getsgbd: DB2 [1]
+04/06/2018 16:26:27.273 Conectando em CISSODBC
+04/06/2018 16:26:27.273 Tentativa de conexão com a última senha utilizada
+04/06/2018 16:26:27.550 Conexão a CISSODBC usuário dba estabelecida com sucesso
+04/06/2018 16:26:27.550 --> fnv_getsgbd: DB2 [1]
+08/06/2018 19:50:25.809 Conectando em CISSODBC
+08/06/2018 19:50:25.825 Tentativa de conexão com a última senha utilizada
+08/06/2018 19:50:26.018 Conexão a CISSODBC usuário dba estabelecida com sucesso
+08/06/2018 19:50:26.022 --> fnv_getsgbd: DB2 [1]
+12/07/2018 16:19:20.031 Conectando em CISSODBC
+12/07/2018 16:19:20.041 Tentativa de conexão com a última senha utilizada
+12/07/2018 16:19:20.294 Conexão a CISSODBC usuário dba estabelecida com sucesso
+12/07/2018 16:19:20.301 --> fnv_getsgbd: DB2 [1]
+06/08/2018 10:31:16.242 Conectando em CISSODBC
+06/08/2018 10:31:16.252 Tentativa de conexão com a última senha utilizada
+06/08/2018 10:31:16.464 Conexão a CISSODBC usuário dba estabelecida com sucesso
+06/08/2018 10:31:16.469 --> fnv_getsgbd: DB2 [1]
+23/08/2018 09:31:21.183 Conectando em CISSODBC
+23/08/2018 09:31:21.196 Tentativa de conexão com a última senha utilizada
+23/08/2018 09:31:21.425 Conexão a CISSODBC usuário dba estabelecida com sucesso
+23/08/2018 09:31:21.433 --> fnv_getsgbd: DB2 [1]
+05/09/2018 10:32:24.494 Conectando em CISSODBC
+05/09/2018 10:32:24.514 Tentativa de conexão com a última senha utilizada
+05/09/2018 10:32:24.805 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/09/2018 10:32:24.807 --> fnv_getsgbd: DB2 [1]
+13/09/2018 17:31:26.804 Conectando em CISSODBC
+13/09/2018 17:31:26.819 Tentativa de conexão com a última senha utilizada
+13/09/2018 17:31:27.158 Conexão a CISSODBC usuário dba estabelecida com sucesso
+13/09/2018 17:31:27.173 --> fnv_getsgbd: DB2 [1]
+15/10/2018 09:24:09.643 Conectando em CISSODBC
+15/10/2018 09:24:09.658 Tentativa de conexão com a última senha utilizada
+15/10/2018 09:24:09.874 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/10/2018 09:24:09.890 --> fnv_getsgbd: DB2 [1]
+22/10/2018 11:03:31.953 Conectando em CISSODBC
+22/10/2018 11:03:31.969 Tentativa de conexão com a última senha utilizada
+22/10/2018 11:03:32.169 Conexão a CISSODBC usuário dba estabelecida com sucesso
+22/10/2018 11:03:32.169 --> fnv_getsgbd: DB2 [1]
+19/11/2018 09:18:12.457 Conectando em CISSODBC
+19/11/2018 09:18:12.466 Tentativa de conexão com a última senha utilizada
+19/11/2018 09:18:13.445 Conexão a CISSODBC usuário dba estabelecida com sucesso
+19/11/2018 09:18:13.465 --> fnv_getsgbd: DB2 [1]
+27/11/2018 16:28:55.761 Conectando em CISSODBC
+27/11/2018 16:28:55.774 Tentativa de conexão com a última senha utilizada
+27/11/2018 16:28:57.192 Conexão a CISSODBC usuário dba estabelecida com sucesso
+27/11/2018 16:28:57.205 --> fnv_getsgbd: DB2 [1]
+27/11/2018 16:36:07.470 Conectando em CISSODBC
+27/11/2018 16:36:07.487 Tentativa de conexão com a última senha utilizada
+27/11/2018 16:36:07.769 Conexão a CISSODBC usuário dba estabelecida com sucesso
+27/11/2018 16:36:07.769 --> fnv_getsgbd: DB2 [1]
+13/12/2018 09:31:10.196 Conectando em CISSODBC
+13/12/2018 09:31:10.212 Tentativa de conexão com a última senha utilizada
+13/12/2018 09:31:10.400 Conexão a CISSODBC usuário dba estabelecida com sucesso
+13/12/2018 09:31:10.405 --> fnv_getsgbd: DB2 [1]
+23/01/2019 17:05:51.954 Conectando em CISSODBC
+23/01/2019 17:05:51.961 Tentativa de conexão com a última senha utilizada
+23/01/2019 17:05:53.351 Conexão a CISSODBC usuário dba estabelecida com sucesso
+23/01/2019 17:05:53.364 --> fnv_getsgbd: DB2 [1]
+24/01/2019 10:18:07.407 Conectando em CISSODBC
+24/01/2019 10:18:07.432 Tentativa de conexão com a última senha utilizada
+24/01/2019 10:18:07.658 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+24/01/2019 10:18:07.658 Utilizando senha #1
+24/01/2019 10:18:09.108 Conexão a CISSODBC usuário dba estabelecida com sucesso
+24/01/2019 10:18:09.118 --> fnv_getsgbd: DB2 [1]
+24/01/2019 10:54:34.863 Conectando em CISSODBC
+24/01/2019 10:54:34.871 Tentativa de conexão com a última senha utilizada
+24/01/2019 10:54:36.079 Conexão a CISSODBC usuário dba estabelecida com sucesso
+24/01/2019 10:54:36.085 --> fnv_getsgbd: DB2 [1]
+22/02/2019 17:27:31.712 Conectando em CISSODBC
+22/02/2019 17:27:31.719 Tentativa de conexão com a última senha utilizada
+22/02/2019 17:27:54.060 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.108.124".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10060", "*", "*".  SQLSTATE=08001
+
+22/02/2019 17:27:54.060 Utilizando senha #1
+22/02/2019 17:27:54.177 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+22/02/2019 17:27:54.183 Utilizando senha #2
+22/02/2019 17:27:54.198 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+22/02/2019 17:27:54.198 Utilizando senha #3
+22/02/2019 17:27:54.230 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+22/02/2019 17:27:54.230 Utilizando senha #4
+22/02/2019 17:27:54.245 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+22/02/2019 17:27:54.261 Utilizando senha #5
+22/02/2019 17:27:54.277 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+22/02/2019 17:27:54.277 Utilizando senha #6
+22/02/2019 17:27:54.330 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+22/02/2019 17:27:54.330 Utilizando senha #7
+22/02/2019 17:27:55.146 Conectando em CISSODBC
+22/02/2019 17:27:55.146 Tentativa de conexão com a última senha utilizada
+22/02/2019 17:27:56.119 Conexão a CISSODBC usuário dba estabelecida com sucesso
+22/02/2019 17:27:56.366 --> fnv_getsgbd: DB2 [1]
+22/02/2019 17:27:56.557 Conexão a CISSODBC usuário dba estabelecida com sucesso
+22/02/2019 17:27:56.563 --> fnv_getsgbd: DB2 [1]
+21/03/2019 10:28:22.010 Conectando em CISSODBC
+21/03/2019 10:28:22.022 Tentativa de conexão com a última senha utilizada
+21/03/2019 10:28:23.029 Conexão a CISSODBC usuário dba estabelecida com sucesso
+21/03/2019 10:28:23.035 --> fnv_getsgbd: DB2 [1]
+05/04/2019 10:38:12.784 Conectando em CISSODBC
+05/04/2019 10:38:12.813 Tentativa de conexão com a última senha utilizada
+05/04/2019 10:38:14.325 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/04/2019 10:38:14.332 --> fnv_getsgbd: DB2 [1]
+05/04/2019 10:38:24.677 Conectando em CISSODBC
+05/04/2019 10:38:24.690 Tentativa de conexão com a última senha utilizada
+05/04/2019 10:38:24.948 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/04/2019 10:38:24.956 --> fnv_getsgbd: DB2 [1]
+23/04/2019 09:43:30.812 Conectando em CISSODBC
+23/04/2019 09:43:30.820 Tentativa de conexão com a última senha utilizada
+23/04/2019 09:43:32.593 Conexão a CISSODBC usuário dba estabelecida com sucesso
+23/04/2019 09:43:32.599 --> fnv_getsgbd: DB2 [1]
+24/04/2019 17:46:42.552 Conectando em CISSODBC
+24/04/2019 17:46:42.561 Tentativa de conexão com a última senha utilizada
+24/04/2019 17:46:44.637 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+24/04/2019 17:46:44.642 Utilizando senha #1
+24/04/2019 17:46:45.665 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+24/04/2019 17:47:03.156 Conectando em CISSODBC
+24/04/2019 17:47:03.165 Tentativa de conexão com a última senha utilizada
+24/04/2019 17:47:04.336 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+24/04/2019 17:47:04.341 Utilizando senha #1
+24/04/2019 17:47:05.366 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+03/05/2019 11:27:27.511 Conectando em CISSODBC
+03/05/2019 11:27:27.518 Tentativa de conexão com a última senha utilizada
+03/05/2019 11:27:29.523 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+03/05/2019 11:27:29.523 Utilizando senha #1
+03/05/2019 11:27:30.572 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+03/05/2019 11:27:43.880 Conectando em CISSODBC
+03/05/2019 11:27:43.896 Tentativa de conexão com a última senha utilizada
+03/05/2019 11:27:44.212 Conexão a CISSODBC usuário dba estabelecida com sucesso
+03/05/2019 11:27:44.228 --> fnv_getsgbd: DB2 [1]
+19/05/2019 13:36:32.890 Conectando em CISSODBC
+19/05/2019 13:36:32.893 Tentativa de conexão com a última senha utilizada
+19/05/2019 13:36:34.166 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+19/05/2019 13:36:34.168 Utilizando senha #1
+19/05/2019 13:36:35.187 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+23/05/2019 14:24:27.082 Conectando em CISSODBC
+23/05/2019 14:24:27.095 Tentativa de conexão com a última senha utilizada
+23/05/2019 14:24:29.838 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+23/05/2019 14:24:29.843 Utilizando senha #1
+23/05/2019 14:24:30.863 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30081N  Foi detectado um erro de comunicação. Protocolo de comunicação sendo utilizado: "TCP/IP".  API de Comunicação sendo utilizada: "SOCKETS".  Localização onde o erro foi detectado: "172.16.106.20".  Função de comunicação que está detectando o erro: "connect".  Código(s) de erro específico(s) de protocolo: "10061", "*", "*".  SQLSTATE=08001
+
+10/07/2019 11:05:59.467 Conectando em CISSODBC
+10/07/2019 11:05:59.471 Tentativa de conexão com a última senha utilizada
+10/07/2019 11:05:59.484 Conexão a CISSODBC usuário dba estabelecida com sucesso
+10/07/2019 11:05:59.491 --> fnv_getsgbd: DB2 [1]
+28/11/2019 09:32:42.254 Conectando em CISSODBC
+28/11/2019 09:32:42.269 Tentativa de conexão com a última senha utilizada
+28/11/2019 09:32:43.328 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+28/11/2019 09:32:43.336 Utilizando senha #1
+28/11/2019 09:32:43.372 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+28/11/2019 09:32:51.752 Conectando em CISSODBC
+28/11/2019 09:32:51.767 Tentativa de conexão com a última senha utilizada
+28/11/2019 09:32:53.280 Conexão a CISSODBC usuário dba estabelecida com sucesso
+28/11/2019 09:32:53.535 --> fnv_getsgbd: DB2 [1]
+29/11/2019 13:58:06.412 Conectando em CISSODBC
+29/11/2019 13:58:06.424 Tentativa de conexão com a última senha utilizada
+29/11/2019 13:58:06.622 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+29/11/2019 13:58:06.628 Utilizando senha #1
+29/11/2019 13:58:06.667 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL1013N  O nome do alias do banco de dados ou o nome do banco de dados "CISSODBC" não foi localizado.  SQLSTATE=42705
+
+29/11/2019 13:58:12.364 Conectando em CISSODBC
+29/11/2019 13:58:12.374 Tentativa de conexão com a última senha utilizada
+29/11/2019 13:58:12.761 Conexão a CISSODBC usuário dba estabelecida com sucesso
+29/11/2019 13:58:12.771 --> fnv_getsgbd: DB2 [1]
+29/11/2019 14:45:19.307 Conectando em CISSODBC
+29/11/2019 14:45:19.320 Tentativa de conexão com a última senha utilizada
+29/11/2019 14:45:21.355 Conexão a CISSODBC usuário dba estabelecida com sucesso
+29/11/2019 14:45:21.363 --> fnv_getsgbd: DB2 [1]
+01/12/2019 20:23:46.541 Conectando em CISSODBC
+01/12/2019 20:23:46.557 Tentativa de conexão com a última senha utilizada
+01/12/2019 20:23:47.027 Conexão a CISSODBC usuário dba estabelecida com sucesso
+01/12/2019 20:23:47.043 --> fnv_getsgbd: DB2 [1]
+03/12/2019 09:04:06.644 Conectando em CISSODBC
+03/12/2019 09:04:06.655 Tentativa de conexão com a última senha utilizada
+03/12/2019 09:04:07.061 Conexão a CISSODBC usuário dba estabelecida com sucesso
+03/12/2019 09:04:07.069 --> fnv_getsgbd: DB2 [1]
+03/12/2019 10:29:48.216 Conectando em CISSODBC
+03/12/2019 10:29:48.227 Tentativa de conexão com a última senha utilizada
+03/12/2019 10:29:50.445 Conexão a CISSODBC usuário dba estabelecida com sucesso
+03/12/2019 10:29:50.452 --> fnv_getsgbd: DB2 [1]
+04/12/2019 11:37:55.038 Conectando em CISSODBC
+04/12/2019 11:37:55.050 Tentativa de conexão com a última senha utilizada
+04/12/2019 11:37:55.651 Conexão a CISSODBC usuário dba estabelecida com sucesso
+04/12/2019 11:37:55.659 --> fnv_getsgbd: DB2 [1]
+24/02/2020 09:52:46.596 Conectando em CISSODBC
+24/02/2020 09:52:46.598 Tentativa de conexão com a última senha utilizada
+24/02/2020 09:52:46.763 Conexão a CISSODBC usuário dba estabelecida com sucesso
+24/02/2020 09:52:47.062 --> fnv_getsgbd: DB2 [1]
+05/03/2020 17:09:41.519 Conectando em CISSODBC
+05/03/2020 17:09:41.521 Tentativa de conexão com a última senha utilizada
+05/03/2020 17:09:41.735 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/03/2020 17:09:41.740 --> fnv_getsgbd: DB2 [1]
+05/03/2020 17:15:31.099 Conectando em CISSODBC
+05/03/2020 17:15:31.101 Tentativa de conexão com a última senha utilizada
+05/03/2020 17:15:31.263 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/03/2020 17:15:31.267 --> fnv_getsgbd: DB2 [1]
+05/03/2020 17:33:03.246 Conectando em CISSODBC
+05/03/2020 17:33:03.248 Tentativa de conexão com a última senha utilizada
+05/03/2020 17:33:03.447 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/03/2020 17:33:03.454 --> fnv_getsgbd: DB2 [1]
+05/03/2020 17:44:21.118 Conectando em CISSODBC
+05/03/2020 17:44:21.119 Tentativa de conexão com a última senha utilizada
+05/03/2020 17:44:21.435 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/03/2020 17:44:21.488 --> fnv_getsgbd: DB2 [1]
+06/03/2020 08:37:00.829 Conectando em CISSODBC
+06/03/2020 08:37:00.829 Tentativa de conexão com a última senha utilizada
+06/03/2020 08:37:01.086 Conexão a CISSODBC usuário dba estabelecida com sucesso
+06/03/2020 08:37:01.090 --> fnv_getsgbd: DB2 [1]
+18/03/2020 14:28:07.824 Conectando em CISSODBC
+18/03/2020 14:28:07.826 Tentativa de conexão com a última senha utilizada
+18/03/2020 14:28:07.988 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/03/2020 14:28:07.991 --> fnv_getsgbd: DB2 [1]
+18/03/2020 16:57:37.090 Conectando em CISSODBC
+18/03/2020 16:57:37.092 Tentativa de conexão com a última senha utilizada
+18/03/2020 16:57:37.261 Conexão a CISSODBC usuário dba estabelecida com sucesso
+18/03/2020 16:57:37.264 --> fnv_getsgbd: DB2 [1]
+25/03/2020 13:11:09.826 Conectando em CISSODBC
+25/03/2020 13:11:09.827 Tentativa de conexão com a última senha utilizada
+25/03/2020 13:11:10.079 Conexão a CISSODBC usuário dba estabelecida com sucesso
+25/03/2020 13:11:10.079 --> fnv_getsgbd: DB2 [1]
+25/03/2020 15:50:24.041 Conectando em CISSODBC
+25/03/2020 15:50:24.043 Tentativa de conexão com a última senha utilizada
+25/03/2020 15:50:24.328 Conexão a CISSODBC usuário dba estabelecida com sucesso
+25/03/2020 15:50:24.333 --> fnv_getsgbd: DB2 [1]
+27/03/2020 09:44:44.163 Conectando em CISSODBC
+27/03/2020 09:44:44.164 Tentativa de conexão com a última senha utilizada
+27/03/2020 09:44:44.327 Conexão a CISSODBC usuário dba estabelecida com sucesso
+27/03/2020 09:44:44.330 --> fnv_getsgbd: DB2 [1]
+05/05/2020 16:28:04.355 Conectando em CISSODBC
+05/05/2020 16:28:04.357 Tentativa de conexão com a última senha utilizada
+05/05/2020 16:28:04.825 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/05/2020 16:28:04.831 --> fnv_getsgbd: DB2 [1]
+05/06/2020 17:35:40.583 Conectando em CISSODBC
+05/06/2020 17:35:40.585 Tentativa de conexão com a última senha utilizada
+05/06/2020 17:35:40.927 Conexão a CISSODBC usuário dba estabelecida com sucesso
+05/06/2020 17:35:40.931 --> fnv_getsgbd: DB2 [1]
+08/06/2020 14:23:59.544 Conectando em CISSODBC
+08/06/2020 14:23:59.546 Tentativa de conexão com a última senha utilizada
+08/06/2020 14:23:59.716 Conexão a CISSODBC usuário dba estabelecida com sucesso
+08/06/2020 14:23:59.719 --> fnv_getsgbd: DB2 [1]
+09/06/2020 09:05:10.896 Conectando em CISSODBC
+09/06/2020 09:05:10.896 Tentativa de conexão com a última senha utilizada
+09/06/2020 09:05:13.612 Conexão a CISSODBC usuário dba estabelecida com sucesso
+09/06/2020 09:05:13.628 --> fnv_getsgbd: DB2 [1]
+14/07/2020 10:50:10.430 Conectando em CISSODBC
+14/07/2020 10:50:10.433 Tentativa de conexão com a última senha utilizada
+14/07/2020 10:50:10.458 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/07/2020 10:50:10.462 --> fnv_getsgbd: DB2 [1]
+14/07/2020 10:52:08.570 Conectando em CISSODBC
+14/07/2020 10:52:08.572 Tentativa de conexão com a última senha utilizada
+14/07/2020 10:52:08.751 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/07/2020 10:52:08.756 --> fnv_getsgbd: DB2 [1]
+07/09/2020 16:31:26.088 Conectando em CISSODBC
+07/09/2020 16:31:26.090 Tentativa de conexão com a última senha utilizada
+07/09/2020 16:31:26.221 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.222 Utilizando senha #1
+07/09/2020 16:31:26.392 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.394 Utilizando senha #2
+07/09/2020 16:31:26.508 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.509 Utilizando senha #3
+07/09/2020 16:31:26.622 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.623 Utilizando senha #4
+07/09/2020 16:31:26.730 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.731 Utilizando senha #5
+07/09/2020 16:31:26.848 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.849 Utilizando senha #6
+07/09/2020 16:31:26.964 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+07/09/2020 16:31:26.965 Utilizando senha #7
+07/09/2020 16:31:27.079 Conexão a CISSODBC usuário dba estabelecida com sucesso
+07/09/2020 16:31:27.087 --> fnv_getsgbd: DB2 [1]
+07/09/2020 18:05:42.908 Conectando em CISSODBC
+07/09/2020 18:05:42.908 Tentativa de conexão com a última senha utilizada
+07/09/2020 18:05:43.038 Conexão a CISSODBC usuário dba estabelecida com sucesso
+07/09/2020 18:05:43.041 --> fnv_getsgbd: DB2 [1]
+07/09/2020 18:07:51.252 Conectando em CISSODBC
+07/09/2020 18:07:51.252 Tentativa de conexão com a última senha utilizada
+07/09/2020 18:07:51.377 Conexão a CISSODBC usuário dba estabelecida com sucesso
+07/09/2020 18:07:51.377 --> fnv_getsgbd: DB2 [1]
+07/09/2020 18:11:35.833 Conectando em CISSODBC
+07/09/2020 18:11:35.836 Tentativa de conexão com a última senha utilizada
+07/09/2020 18:11:35.957 Conexão a CISSODBC usuário dba estabelecida com sucesso
+07/09/2020 18:11:35.959 --> fnv_getsgbd: DB2 [1]
