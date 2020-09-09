@@ -1,0 +1,24 @@
+HA$PBExportHeader$of_conectar.srf
+global type of_conectar from function_object
+end type
+
+forward prototypes
+global function integer of_conectar ()
+end prototypes
+
+global function integer of_conectar ();//// Profile cissobdc
+nv_connectdb lnv_connectdb 
+lnv_connectdb = create nv_connectdb
+
+if lnv_connectdb.fnv_connectdb( sqlca ) < 0 then
+	messagebox('Aviso','Falha ao conectar no banco de dados')
+	return -1
+end if
+
+
+gs_banco = 'DB2'
+
+
+RETURN 1
+end function
+

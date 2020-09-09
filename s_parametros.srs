@@ -1,0 +1,19 @@
+HA$PBExportHeader$s_parametros.srs
+$PBExportComments$tarefas.pbl Estrutura utilizada para criar retornos de informa$$HEX2$$e700f500$$ENDHEX$$es para outros programas de forma em Matriz.
+global type s_parametros from structure
+	string		string[]
+	integer		integer[]
+	date		date[]
+	long		long[]
+	powerobject		powerobj[]
+	datetime		datatime[]
+	decimal { 6 }		decimal[]
+	boolean		boolean[]
+	double		double[]
+	time		time[]
+	blob		blob[]
+	string		strcomp[]
+	transaction		transaction[]
+	longlong		longlong[]
+end type
+
