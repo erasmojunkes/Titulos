@@ -14,7 +14,7 @@ end variables
 
 forward prototypes
 public function integer of_importar ()
-public function String of_abrir_arquivo (s_parametros ast_parametros)
+public function string of_abrir_arquivo (s_parametros ast_parametros)
 public function integer of_colunas_arquivo (string as_linha, ref string as_colunas[])
 end prototypes
 
@@ -82,7 +82,7 @@ FileClose(ll_Arquivo)
 Return 1
 end function
 
-public function String of_abrir_arquivo (s_parametros ast_parametros);long ll_valor 
+public function string of_abrir_arquivo (s_parametros ast_parametros);long ll_valor 
 long ll_numext 
 long ll_num    
 
@@ -112,12 +112,7 @@ IF ll_valor = -1 THEN
 	ls_docname = ''
 end if
 
-
-//SetCurrentDirectoryA(gs_DirApp)
-
-
-
-return string(ls_docname)
+Return string(ls_docname)
 end function
 
 public function integer of_colunas_arquivo (string as_linha, ref string as_colunas[]);String ls_Value
