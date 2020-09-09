@@ -1,0 +1,13 @@
+Save Format v3.0(19990112)
+@begin Libraries
+ "titulos.pbl" "";
+@end;
+@begin Objects
+ "nv_titulos.sru" "titulos.pbl";
+ "of_conectar.srf" "titulos.pbl";
+ "d_arquivotitulos.srd" "titulos.pbl";
+ "w_inicial.srw" "titulos.pbl";
+ "nv_funcoes.sru" "titulos.pbl";
+ "titulos.sra" "titulos.pbl";
+ "s_parametros.srs" "titulos.pbl";
+@end;
