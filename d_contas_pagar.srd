@@ -1,0 +1,127 @@
+HA$PBExportHeader$d_contas_pagar.srd
+release 10.5;
+datawindow(units=0 timer_interval=0 color=1073741824 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.preview.outline=yes hidegrayline=no grid.lines=0 )
+header(height=92 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=92 color="536870912" )
+table(column=(type=long updatewhereclause=yes name=idempresa dbname="IDEMPRESA" )
+ column=(type=long updatewhereclause=yes name=idclifor dbname="IDCLIFOR" )
+ column=(type=long updatewhereclause=yes name=idplanilha dbname="IDPLANILHA" )
+ column=(type=char(3) updatewhereclause=yes name=digitotitulo dbname="DIGITOTITULO" )
+ column=(type=char(3) updatewhereclause=yes name=serienota dbname="SERIENOTA" )
+ column=(type=long updatewhereclause=yes name=idpagamento dbname="IDPAGAMENTO" )
+ column=(type=char(6) updatewhereclause=yes name=origemmovimento dbname="ORIGEMMOVIMENTO" )
+ column=(type=decimal(2) updatewhereclause=yes name=valtitulo dbname="VALTITULO" )
+ column=(type=date updatewhereclause=yes name=dtmovimento dbname="DTMOVIMENTO" )
+ column=(type=date updatewhereclause=yes name=dtemissao dbname="DTEMISSAO" )
+ column=(type=long updatewhereclause=yes name=idtitulo dbname="IDTITULO" )
+ column=(type=date updatewhereclause=yes name=dtvencimento dbname="DTVENCIMENTO" )
+ column=(type=char(600) updatewhereclause=yes name=obstitulo dbname="OBSTITULO" )
+ column=(type=long updatewhereclause=yes name=idctacontabil dbname="IDCTACONTABIL" )
+ column=(type=long updatewhereclause=yes name=idusuario dbname="IDUSUARIO" )
+ column=(type=decimal(2) updatewhereclause=yes name=sumvalpagamentotitulo dbname="SUMVALPAGAMENTOTITULO" )
+ column=(type=decimal(8) updatewhereclause=yes name=valliquidotitulo dbname="VALLIQUIDOTITULO" )
+ column=(type=decimal(2) updatewhereclause=yes name=sumvaljuroscobrado dbname="SUMVALJUROSCOBRADO" )
+ column=(type=decimal(2) updatewhereclause=yes name=sumvaljurosisentado dbname="SUMVALJUROSISENTADO" )
+ column=(type=decimal(2) updatewhereclause=yes name=sumvaljurospostergado dbname="SUMVALJUROSPOSTERGADO" )
+ column=(type=decimal(8) updatewhereclause=yes name=sumvaljurosmora dbname="SUMVALJUROSMORA" )
+ column=(type=decimal(2) updatewhereclause=yes name=sumvaldescconcedidotitulo dbname="SUMVALDESCCONCEDIDOTITULO" )
+ column=(type=decimal(2) updatewhereclause=yes name=valordesconto dbname="VALORDESCONTO" )
+ column=(type=decimal(2) updatewhereclause=yes name=valorpagamento dbname="VALORPAGAMENTO" )
+ column=(type=char(80) updatewhereclause=yes name=nome dbname="NOME" )
+ column=(type=long updatewhereclause=yes name=idctacontabil_1 dbname="IDCTACONTABIL" )
+ column=(type=decimal(2) updatewhereclause=yes name=valsaldotitulo dbname="VALSALDOTITULO" )
+ column=(type=char(1) updatewhereclause=yes name=flagcartaoproprio dbname="FLAGCARTAOPROPRIO" )
+ column=(type=char(1) updatewhereclause=yes name=flagclientevip dbname="FLAGCLIENTEVIP" )
+ column=(type=char(1) updatewhereclause=yes name=flagtitulobloqueado dbname="FLAGTITULOBLOQUEADO" )
+ column=(type=date updatewhereclause=yes name=dtagendamento dbname="DTAGENDAMENTO" )
+ column=(type=decimal(2) updatewhereclause=yes name=valnegociado dbname="VALNEGOCIADO" )
+ column=(type=char(40) updatewhereclause=yes name=descrrecebimento dbname="DESCRRECEBIMENTO" )
+ column=(type=char(44) updatewhereclause=yes name=chavenfe dbname="CHAVENFE" )
+ retrieve="SELECT
+	CONTAS_PAGAR.IDEMPRESA,
+	CONTAS_PAGAR.IDCLIFOR,
+	CONTAS_PAGAR.IDPLANILHA,
+	CONTAS_PAGAR.DIGITOTITULO,
+	CONTAS_PAGAR.SERIENOTA,
+	CONTAS_PAGAR.IDPAGAMENTO,
+	CONTAS_PAGAR.ORIGEMMOVIMENTO,
+	CONTAS_PAGAR.VALTITULO,
+	CONTAS_PAGAR.DTMOVIMENTO,
+	CONTAS_PAGAR.DTEMISSAO,
+	CONTAS_PAGAR.IDTITULO,
+	CONTAS_PAGAR.DTVENCIMENTO,
+	CONTAS_PAGAR.OBSTITULO,
+	CONTAS_PAGAR.IDCTACONTABIL,
+	CONTAS_PAGAR.IDUSUARIO,
+	CONTAS_PAGAR_SALDOS_VIEW.SUMVALPAGAMENTOTITULO,
+	CONTAS_PAGAR_SALDOS_VIEW.VALLIQUIDOTITULO,
+	CONTAS_PAGAR_SALDOS_VIEW.SUMVALJUROSCOBRADO,
+	CONTAS_PAGAR_SALDOS_VIEW.SUMVALJUROSISENTADO,
+	CONTAS_PAGAR_SALDOS_VIEW.SUMVALJUROSPOSTERGADO,
+	CONTAS_PAGAR_SALDOS_VIEW.SUMVALJUROSMORA,
+	CONTAS_PAGAR_SALDOS_VIEW.SUMVALDESCCONCEDIDOTITULO,
+	CAST(0 AS DECIMAL (15, 2)) AS VALORDESCONTO,
+	CAST(0 AS DECIMAL (15, 2)) AS VALORPAGAMENTO,
+	CLIENTE_FORNECEDOR.NOME,
+	CONTAS_PAGAR.IDCTACONTABIL,
+	CONTAS_PAGAR_SALDOS_VIEW.VALSALDOTITULO,
+	CONTAS_PAGAR.FLAGCARTAOPROPRIO,
+	CLIENTE_FORNECEDOR.FLAGCLIENTEVIP,
+	CONTAS_PAGAR.FLAGTITULOBLOQUEADO,
+	CONTAS_PAGAR.DTAGENDAMENTO,
+	CAST(0 AS DECIMAL(10, 2)) AS VALNEGOCIADO,
+	FORMA_PAGREC.DESCRRECEBIMENTO,
+	NOTA.CHAVENFE
+FROM
+	CONTAS_PAGAR
+LEFT OUTER JOIN CONTAS_PAGAR_SALDOS_VIEW ON
+	CONTAS_PAGAR.IDEMPRESA = CONTAS_PAGAR_SALDOS_VIEW.IDEMPRESA
+	AND CONTAS_PAGAR.IDCLIFOR = CONTAS_PAGAR_SALDOS_VIEW.IDCLIFOR
+	AND CONTAS_PAGAR.IDTITULO = CONTAS_PAGAR_SALDOS_VIEW.IDTITULO
+	AND CONTAS_PAGAR.DIGITOTITULO = CONTAS_PAGAR_SALDOS_VIEW.DIGITOTITULO
+	AND CONTAS_PAGAR.SERIENOTA = CONTAS_PAGAR_SALDOS_VIEW.SERIENOTA
+LEFT OUTER JOIN CLIENTE_FORNECEDOR ON
+	CONTAS_PAGAR.IDCLIFOR = CLIENTE_FORNECEDOR.IDCLIFOR
+LEFT JOIN DBA.FORMA_PAGREC ON
+	CONTAS_PAGAR.IDPAGAMENTO = FORMA_PAGREC.IDRECEBIMENTO
+LEFT JOIN DBA.FLUXO_PREVISAO_AUTO FLU ON
+	(CONTAS_PAGAR.IDEMPRESA = FLU.IDEMPRESA
+	AND CONTAS_PAGAR.IDCLIFOR = FLU.IDCLIFOR
+	AND CONTAS_PAGAR.IDTITULO = FLU.IDTITULO
+	AND CONTAS_PAGAR.DIGITOTITULO = FLU.DIGITOTITULO)
+LEFT JOIN DBA.NOTAS_ENTRADA_SAIDA ON
+	( CONTAS_PAGAR.IDPLANILHA = NOTAS_ENTRADA_SAIDA.IDPLANILHA )
+LEFT JOIN DBA.OPERACAO_INTERNA ON
+	( OPERACAO_INTERNA.IDOPERACAO = NOTAS_ENTRADA_SAIDA.IDOPERACAO )
+LEFT JOIN NOTA_FISCAL_ELETRONICA NOTA ON
+	(NOTA.IDPLANILHA = CONTAS_PAGAR.IDPLANILHA
+	AND NOTA.IDEMPRESA = CONTAS_PAGAR.IDEMPRESA )
+WHERE
+	NOTA.CHAVENFE = :RA_CHAVENFE" arguments=(("RA_CHAVENFE", string)) )
+text(band=header alignment="0" text="Idtitulo" border="0" color="33554432" x="1198" y="4" height="64" width="517" html.valueishtml="0"  name=idtitulo_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Chavenfe" border="0" color="33554432" x="9" y="4" height="64" width="1179" html.valueishtml="0"  name=chavenfe_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Digitotitulo" border="0" color="33554432" x="1723" y="4" height="64" width="123" html.valueishtml="0"  name=digitotitulo_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Dtvencimento" border="0" color="33554432" x="1856" y="4" height="64" width="590" html.valueishtml="0"  name=dtvencimento_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Valtitulo" border="0" color="33554432" x="2455" y="4" height="64" width="718" html.valueishtml="0"  name=valtitulo_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Valliquidotitulo" border="0" color="33554432" x="3182" y="4" height="64" width="640" html.valueishtml="0"  name=valliquidotitulo_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Valorpagamento" border="0" color="33554432" x="3831" y="4" height="64" width="2126" html.valueishtml="0"  name=valorpagamento_t visible="1"  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=11 alignment="0" tabsequence=32766 border="0" color="33554432" x="1198" y="12" height="64" width="517" format="[general]" html.valueishtml="0"  name=idtitulo visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=34 alignment="0" tabsequence=32766 border="0" color="33554432" x="9" y="12" height="64" width="1179" format="[general]" html.valueishtml="0"  name=chavenfe visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=4 alignment="0" tabsequence=32766 border="0" color="33554432" x="1723" y="12" height="64" width="123" format="[general]" html.valueishtml="0"  name=digitotitulo visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=12 alignment="0" tabsequence=32766 border="0" color="33554432" x="1856" y="12" height="64" width="590" format="[general]" html.valueishtml="0"  name=dtvencimento visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=8 alignment="0" tabsequence=32766 border="0" color="33554432" x="2459" y="12" height="64" width="713" format="[general]" html.valueishtml="0"  name=valtitulo visible="1" editmask.mask="###,###,###.00" editmask.focusrectangle=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=17 alignment="0" tabsequence=32766 border="0" color="33554432" x="3182" y="12" height="64" width="640" format="[general]" html.valueishtml="0"  name=valliquidotitulo visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=24 alignment="0" tabsequence=32766 border="0" color="33554432" x="3831" y="12" height="64" width="2126" format="[general]" html.valueishtml="0"  name=valorpagamento visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Tahoma" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 
