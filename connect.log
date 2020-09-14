@@ -897,3 +897,71 @@
 14/09/2020 09:32:04.603 Tentativa de conexão com a última senha utilizada
 14/09/2020 09:32:04.726 Conexão a CISSODBC usuário dba estabelecida com sucesso
 14/09/2020 09:32:04.730 --> fnv_getsgbd: DB2 [1]
+14/09/2020 10:53:16.375 Conectando em CISSODBC
+14/09/2020 10:53:16.377 Tentativa de conexão com a última senha utilizada
+14/09/2020 10:53:16.496 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 10:53:16.500 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:03:24.415 Conectando em CISSODBC
+14/09/2020 11:03:24.416 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:03:24.838 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:03:24.839 Utilizando senha #1
+14/09/2020 11:03:25.138 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:03:25.232 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:28:05.385 Conectando em CISSODBC
+14/09/2020 11:28:05.385 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:28:05.788 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:28:05.878 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:45:08.270 Conectando em CISSODBC
+14/09/2020 11:45:08.276 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:45:09.323 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:09.325 Utilizando senha #1
+14/09/2020 11:45:09.456 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:09.458 Utilizando senha #2
+14/09/2020 11:45:09.583 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:09.585 Utilizando senha #3
+14/09/2020 11:45:09.711 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:09.712 Utilizando senha #4
+14/09/2020 11:45:10.761 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:10.763 Utilizando senha #5
+14/09/2020 11:45:10.893 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:10.896 Utilizando senha #6
+14/09/2020 11:45:11.052 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+14/09/2020 11:45:11.053 Utilizando senha #7
+14/09/2020 11:45:11.178 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:45:11.183 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:48:01.651 Conectando em CISSODBC
+14/09/2020 11:48:01.653 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:48:01.766 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:48:01.769 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:50:35.356 Conectando em CISSODBC
+14/09/2020 11:50:35.358 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:50:35.472 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:50:35.476 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:53:07.182 Conectando em CISSODBC
+14/09/2020 11:53:07.186 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:53:07.312 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:53:07.316 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:53:48.736 Conectando em CISSODBC
+14/09/2020 11:53:48.739 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:53:48.869 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:53:48.873 --> fnv_getsgbd: DB2 [1]
+14/09/2020 11:58:12.956 Conectando em CISSODBC
+14/09/2020 11:58:12.960 Tentativa de conexão com a última senha utilizada
+14/09/2020 11:58:13.083 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 11:58:13.087 --> fnv_getsgbd: DB2 [1]
