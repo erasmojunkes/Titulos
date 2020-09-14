@@ -4,9 +4,11 @@ Save Format v3.0(19990112)
 @end;
 @begin Objects
  "nv_titulos.sru" "titulos.pbl";
+ "d_contas_pagar_baixas.srd" "titulos.pbl";
  "d_contas_pagar.srd" "titulos.pbl";
  "d_divergencias.srd" "titulos.pbl";
  "w_divergencias.srw" "titulos.pbl";
+ "d_contabil_movimento.srd" "titulos.pbl";
  "of_conectar.srf" "titulos.pbl";
  "d_arquivotitulos.srd" "titulos.pbl";
  "w_inicial.srw" "titulos.pbl";
