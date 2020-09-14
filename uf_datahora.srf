@@ -1,0 +1,17 @@
+HA$PBExportHeader$uf_datahora.srf
+$PBExportComments$retorna data e hora do servidor para gravar em campos do tipo datetime
+global type uf_datahora from function_object
+end type
+
+forward prototypes
+global function datetime uf_datahora ()
+end prototypes
+
+global function datetime uf_datahora ();datetime ld_sisdata
+
+select parametros.sisdata into  :ld_sisdata from (select getdate() from dummy) as parametros(sisdata);
+
+return ld_sisdata
+
+end function
+
