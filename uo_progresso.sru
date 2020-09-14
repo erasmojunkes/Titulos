@@ -13,7 +13,7 @@ integer width = 1851
 integer height = 240
 long backcolor = 67108864
 string text = "none"
-borderstyle borderstyle = StyleRaised!
+borderstyle borderstyle = styleraised!
 long tabtextcolor = 33554432
 long picturemaskcolor = 536870912
 st_titulo st_titulo
@@ -45,11 +45,7 @@ End If
 Show( )
 end subroutine
 
-public subroutine of_atualizar (long al_linhaatual, integer al_quantidadelinhas);//Atualiza o percentual dos registros carregados	
-If Truncate((al_LinhaAtual / al_QuantidadeLinhas) * 100, 0) <> hpb_progresso.Position Then	
-	hpb_progresso.Position = (al_LinhaAtual / al_QuantidadeLinhas) * 100
-End If
-
+public subroutine of_atualizar (long al_linhaatual, integer al_quantidadelinhas);
 hpb_progresso.stepit()
 hpb_progresso.position += hpb_progresso.setstep
 

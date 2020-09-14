@@ -201,7 +201,7 @@ For ll_For = 1 To ads_Arquivo.RowCount()
 		Continue
 	End If
 	
-	lde_ValorArquivo = ads_Arquivo.GetItemDecimal(1,'valoricms')
+	lde_ValorArquivo = Round(ads_Arquivo.GetItemDecimal(1,'valoricms'),2)
 	lde_SaldoTitulo = lds_ContasPagar.GetItemDecimal(1,'valliquidotit')
 	
 	If lde_ValorArquivo > lde_SaldoTitulo Then
@@ -240,7 +240,7 @@ public function integer of_processa_titulo (datastore ads_arquivo, datawindow ad
 
 If ads_Arquivo.RowCount() > 0 Then
 	w_Inicial.OpenUserObject(iuo_BarraProgresso)
-	iuo_BarraProgresso.of_definir_valores( 1, ads_Arquivo.RowCount() , 1,'Relacionando T$$HEX1$$ed00$$ENDHEX$$tulos com o Arquivo. Aguarde...') 
+	iuo_BarraProgresso.of_definir_valores(0, ads_Arquivo.RowCount() , 1,'Relacionando T$$HEX1$$ed00$$ENDHEX$$tulos com o Arquivo. Aguarde...') 
 End If
 
 ll_Retorno = of_processar_titulos( ads_arquivo, adw_contaspagar)
