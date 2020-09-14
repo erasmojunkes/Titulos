@@ -877,3 +877,23 @@
 13/09/2020 19:57:11.379 Tentativa de conexão com a última senha utilizada
 13/09/2020 19:57:11.544 Conexão a CISSODBC usuário dba estabelecida com sucesso
 13/09/2020 19:57:11.548 --> fnv_getsgbd: DB2 [1]
+14/09/2020 09:10:11.731 Conectando em CISSODBC
+14/09/2020 09:10:11.732 Tentativa de conexão com a última senha utilizada
+14/09/2020 09:10:11.858 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 09:10:12.109 --> fnv_getsgbd: DB2 [1]
+14/09/2020 09:11:51.486 Conectando em CISSODBC
+14/09/2020 09:11:51.489 Tentativa de conexão com a última senha utilizada
+14/09/2020 09:11:51.735 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 09:11:51.738 --> fnv_getsgbd: DB2 [1]
+14/09/2020 09:20:52.890 Conectando em CISSODBC
+14/09/2020 09:20:52.892 Tentativa de conexão com a última senha utilizada
+14/09/2020 09:20:53.121 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 09:20:53.124 --> fnv_getsgbd: DB2 [1]
+14/09/2020 09:25:18.115 Conectando em CISSODBC
+14/09/2020 09:25:18.120 Tentativa de conexão com a última senha utilizada
+14/09/2020 09:25:18.274 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 09:25:18.278 --> fnv_getsgbd: DB2 [1]
+14/09/2020 09:32:04.602 Conectando em CISSODBC
+14/09/2020 09:32:04.603 Tentativa de conexão com a última senha utilizada
+14/09/2020 09:32:04.726 Conexão a CISSODBC usuário dba estabelecida com sucesso
+14/09/2020 09:32:04.730 --> fnv_getsgbd: DB2 [1]
