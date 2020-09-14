@@ -36,6 +36,7 @@ type variables
 s_Parametros lst_Retorno
 nv_Funcoes inv_Funcoes
 end variables
+
 event open;s_Parametros lst_Recebe
 DataStore lds_Divergencias
 
@@ -120,7 +121,7 @@ fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
 string facename = "Tahoma"
-string text = "Confirmar"
+string text = "Continuar"
 end type
 
 event clicked;lst_Retorno.Long[1] = 1

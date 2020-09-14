@@ -15,10 +15,10 @@ end variables
 
 forward prototypes
 public function integer of_colunas_arquivo (string as_linha, ref string as_colunas[])
-public function integer of_importar (datawindow adw_contas_pagar)
 public subroutine of_adicionar_divergencia (datastore ads_divergencias, string as_chavenfe, long al_idtitulo, string as_digitotitulo, string as_descricaodivergencia)
-public function integer of_processar_titulos (datastore ads_arquivo, datawindow adw_contaspagar)
-public function integer of_processa_titulo (datastore ads_arquivo, datawindow adw_contaspagar)
+public function integer of_importar (datawindow adw_contas_pagar, long al_idclifor)
+public function integer of_processar_titulos (datastore ads_arquivo, datawindow adw_contaspagar, long al_idclifor)
+public function integer of_processa_titulo (datastore ads_arquivo, datawindow adw_contaspagar, long al_idclifor)
 end prototypes
 
 public function integer of_colunas_arquivo (string as_linha, ref string as_colunas[]);String ls_Value
@@ -49,7 +49,26 @@ Loop While (Len(as_Linha) > 0 and ll_Pos > 0 )
 Return 1
 end function
 
-public function integer of_importar (datawindow adw_contas_pagar);s_Parametros lst_Envio
+public subroutine of_adicionar_divergencia (datastore ads_divergencias, string as_chavenfe, long al_idtitulo, string as_digitotitulo, string as_descricaodivergencia);Long ll_NovaLinha
+Long ll_Null
+
+If al_idTitulo = 0 Then
+	SetNull(ll_Null)
+	al_idTitulo = ll_Null
+End If
+
+ll_NovaLinha = ads_divergencias.InsertRow(0)
+
+ads_divergencias.SetItem(ll_NovaLinha, 'chavenfe', as_ChaveNFE )
+ads_divergencias.SetItem(ll_NovaLinha, 'idtitulo', al_idTitulo )
+ads_divergencias.SetItem(ll_NovaLinha, 'digitotiulo', as_DigitoTitulo)
+ads_divergencias.SetItem(ll_NovaLinha, 'descricaodivergencia', as_DescricaoDivergencia)
+
+
+//teste
+end subroutine
+
+public function integer of_importar (datawindow adw_contas_pagar, long al_idclifor);s_Parametros lst_Envio
 String ls_CaminhoArquivo, ls_Linha, ls_Colunas[], ls_ChaveAntiga
 Long ll_Bytes, ll_Arquivo, ll_Linha, ll_For
 Datastore lds_Arquivo
@@ -114,7 +133,7 @@ Loop
 
 FileClose(ll_Arquivo)
 
-If of_processa_titulo(lds_Arquivo, adw_contas_pagar) < 0 Then 
+If of_processa_titulo(lds_Arquivo, adw_contas_pagar, al_idCliFor) < 0 Then 
 	Return -1
 End If
 
@@ -122,30 +141,11 @@ End If
 Return 1
 end function
 
-public subroutine of_adicionar_divergencia (datastore ads_divergencias, string as_chavenfe, long al_idtitulo, string as_digitotitulo, string as_descricaodivergencia);Long ll_NovaLinha
-Long ll_Null
-
-If al_idTitulo = 0 Then
-	SetNull(ll_Null)
-	al_idTitulo = ll_Null
-End If
-
-ll_NovaLinha = ads_divergencias.InsertRow(0)
-
-ads_divergencias.SetItem(ll_NovaLinha, 'chavenfe', as_ChaveNFE )
-ads_divergencias.SetItem(ll_NovaLinha, 'idtitulo', al_idTitulo )
-ads_divergencias.SetItem(ll_NovaLinha, 'digitotiulo', as_DigitoTitulo)
-ads_divergencias.SetItem(ll_NovaLinha, 'descricaodivergencia', as_DescricaoDivergencia)
-
-
-//teste
-end subroutine
-
-public function integer of_processar_titulos (datastore ads_arquivo, datawindow adw_contaspagar);String ls_ChaveNFE, ls_DigitoTitulo
+public function integer of_processar_titulos (datastore ads_arquivo, datawindow adw_contaspagar, long al_idclifor);String ls_ChaveNFE, ls_DigitoTitulo
 Long ll_For, ll_Retrieve, ll_Titulo
 Decimal  lde_ValorArquivo, lde_SaldoTitulo
 DataStore lds_ContasPagar, lds_Divergencias
-Date ld_DataAtual, ld_DataVencimentoTitulo
+//Date ld_DataAtual, ld_DataVencimentoTitulo
 s_Parametros lst_Divergencias
 
 lds_Divergencias = Create DataStore
@@ -157,7 +157,7 @@ lds_ContasPagar.SetTransObject(SQLCA)
 lds_Divergencias.DataObject = 'd_divergencias'
 lds_Divergencias.SetTransObject(SQLCA)
 
-ld_DataAtual = Date(inv_Funcoes.of_get_data_atual( ))
+//ld_DataAtual = Date(inv_Funcoes.of_get_data_atual( ))
 
 For ll_For = 1 To ads_Arquivo.RowCount()
 	
@@ -167,7 +167,7 @@ For ll_For = 1 To ads_Arquivo.RowCount()
 	
 	ls_ChaveNFE = ads_Arquivo.GetItemString(ll_For, 'chavenfe')
 
-	ll_Retrieve = lds_ContasPagar.Retrieve(ls_ChaveNFE)
+	ll_Retrieve = lds_ContasPagar.Retrieve(ls_ChaveNFE, al_idClifor)
 	
 
 	If ll_Retrieve =  0 Then
@@ -195,13 +195,13 @@ For ll_For = 1 To ads_Arquivo.RowCount()
 	End If
 	
 	
-	ld_DataVencimentoTitulo = lds_ContasPagar.GetItemDate(1,'dtvencimento')
-
-	//Se encontrou um titulo vencido, ele cancela a baixa do registro
-	If ld_DataVencimentoTitulo < ld_DataAtual Then 
-		of_adicionar_divergencia(lds_Divergencias, ls_ChaveNFE,ll_Titulo ,ls_DigitoTitulo , 'O t$$HEX1$$ed00$$ENDHEX$$tulo se encontra vencido e n$$HEX1$$e300$$ENDHEX$$o pode ser baixado.')
-		Continue
-	End If
+//	ld_DataVencimentoTitulo = lds_ContasPagar.GetItemDate(1,'dtvencimento')
+//
+//	//Se encontrou um titulo vencido, ele cancela a baixa do registro
+//	If ld_DataVencimentoTitulo < ld_DataAtual Then 
+//		of_adicionar_divergencia(lds_Divergencias, ls_ChaveNFE,ll_Titulo ,ls_DigitoTitulo , 'O t$$HEX1$$ed00$$ENDHEX$$tulo se encontra vencido e n$$HEX1$$e300$$ENDHEX$$o pode ser baixado.')
+//		Continue
+//	End If
 	
 	lde_ValorArquivo = Round(ads_Arquivo.GetItemDecimal(1,'valoricms'),2)
 	lde_SaldoTitulo = lds_ContasPagar.GetItemDecimal(1,'valliquidotitulo')
@@ -238,14 +238,14 @@ End If
 Return 1
 end function
 
-public function integer of_processa_titulo (datastore ads_arquivo, datawindow adw_contaspagar);Long ll_Retorno
+public function integer of_processa_titulo (datastore ads_arquivo, datawindow adw_contaspagar, long al_idclifor);Long ll_Retorno
 
 If ads_Arquivo.RowCount() > 0 Then
 	w_Inicial.OpenUserObject(iuo_BarraProgresso)
 	iuo_BarraProgresso.of_definir_valores(0, ads_Arquivo.RowCount() , 1,'Relacionando T$$HEX1$$ed00$$ENDHEX$$tulos com o Arquivo. Aguarde...') 
 End If
 
-ll_Retorno = of_processar_titulos( ads_arquivo, adw_contaspagar)
+ll_Retorno = of_processar_titulos( ads_arquivo, adw_contaspagar, al_idCliFor)
 
 //Assim consegue fechar a barra de progresso, idependente do retorno da tela
 w_Inicial.CloseUserObject(iuo_BarraProgresso)

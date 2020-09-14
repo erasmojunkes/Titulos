@@ -39,7 +39,8 @@ table(column=(type=long updatewhereclause=yes name=idempresa dbname="IDEMPRESA" 
  column=(type=decimal(2) updatewhereclause=yes name=valnegociado dbname="VALNEGOCIADO" )
  column=(type=char(40) updatewhereclause=yes name=descrrecebimento dbname="DESCRRECEBIMENTO" )
  column=(type=char(44) updatewhereclause=yes name=chavenfe dbname="CHAVENFE" )
- retrieve="SELECT
+ retrieve="
+SELECT
 	CONTAS_PAGAR.IDEMPRESA,
 	CONTAS_PAGAR.IDCLIFOR,
 	CONTAS_PAGAR.IDPLANILHA,
@@ -73,7 +74,7 @@ table(column=(type=long updatewhereclause=yes name=idempresa dbname="IDEMPRESA" 
 	CONTAS_PAGAR.DTAGENDAMENTO,
 	CAST(0 AS DECIMAL(10, 2)) AS VALNEGOCIADO,
 	FORMA_PAGREC.DESCRRECEBIMENTO,
-	NOTA.CHAVENFE
+	NOTAS_TERCEIROS.CHAVENFE
 FROM
 	CONTAS_PAGAR
 LEFT OUTER JOIN CONTAS_PAGAR_SALDOS_VIEW ON
@@ -95,11 +96,17 @@ LEFT JOIN DBA.NOTAS_ENTRADA_SAIDA ON
 	( CONTAS_PAGAR.IDPLANILHA = NOTAS_ENTRADA_SAIDA.IDPLANILHA )
 LEFT JOIN DBA.OPERACAO_INTERNA ON
 	( OPERACAO_INTERNA.IDOPERACAO = NOTAS_ENTRADA_SAIDA.IDOPERACAO )
-LEFT JOIN NOTA_FISCAL_ELETRONICA NOTA ON
-	(NOTA.IDPLANILHA = CONTAS_PAGAR.IDPLANILHA
-	AND NOTA.IDEMPRESA = CONTAS_PAGAR.IDEMPRESA )
-WHERE
-	NOTA.CHAVENFE = :RA_CHAVENFE" arguments=(("RA_CHAVENFE", string)) )
+
+JOIN 
+	DBA.NOTA_FISCAL_ELETRONICA_TERCEIROS NOTAS_TERCEIROS ON 
+		(CONTAS_PAGAR.IDEMPRESA = NOTAS_TERCEIROS.IDEMPRESA AND
+		 CONTAS_PAGAR.IDPLANILHA = NOTAS_TERCEIROS.IDPLANILHA)
+WHERE 
+	CONTAS_PAGAR.FLAGBAIXADA = 'F' AND 
+	NOTAS_TERCEIROS.CHAVENFE = :RA_CHAVENFE AND 
+	CONTAS_PAGAR.IDCLIFOR = :RA_IDCLIFOR
+	
+" arguments=(("RA_CHAVENFE", string),("RA_IDCLIFOR", number)) )
 text(band=header alignment="2" text="Valor a Pagar" border="0" color="33554432" x="3534" y="12" height="56" width="462" html.valueishtml="0"  name=valorpagamento_t visible="1"  font.face="Arial" font.height="-8" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
 text(band=header alignment="2" text="Chave NF-e" border="0" color="33554432" x="9" y="12" height="56" width="1179" html.valueishtml="0"  name=chavenfe_t visible="1"  font.face="Arial" font.height="-8" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
 text(band=header alignment="2" text="T$$HEX1$$ed00$$ENDHEX$$tulo" border="0" color="33554432" x="1198" y="12" height="56" width="517" html.valueishtml="0"  name=idtitulo_t visible="1"  font.face="Arial" font.height="-8" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )

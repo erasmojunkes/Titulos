@@ -60,7 +60,7 @@ If lnv_Funcoes.of_verifica_cliente(ll_idClifor) < 0 Then
 	Return 
 End If
 
-If lnv_Titulos.of_Importar(dw_contas_pagar) < 0 Then 
+If lnv_Titulos.of_Importar(dw_contas_pagar, Long(em_idclifor.Text)) < 0 Then 
 	of_Resetar_Tela( )
 	Return
 End If
@@ -134,7 +134,7 @@ string facename = "Tahoma"
 long textcolor = 33554432
 string text = "none"
 borderstyle borderstyle = stylelowered!
-string mask = "#"
+string mask = "##################"
 end type
 
 type cb_importar from commandbutton within w_inicial
