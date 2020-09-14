@@ -39,6 +39,7 @@ table(column=(type=long updatewhereclause=yes name=idempresa dbname="IDEMPRESA" 
  column=(type=decimal(2) updatewhereclause=yes name=valnegociado dbname="VALNEGOCIADO" )
  column=(type=char(40) updatewhereclause=yes name=descrrecebimento dbname="DESCRRECEBIMENTO" )
  column=(type=char(44) updatewhereclause=yes name=chavenfe dbname="CHAVENFE" )
+ column=(type=long updatewhereclause=yes name=idctacredito dbname="IDCTACREDITO" )
  retrieve="
 SELECT
 	CONTAS_PAGAR.IDEMPRESA,
@@ -74,7 +75,12 @@ SELECT
 	CONTAS_PAGAR.DTAGENDAMENTO,
 	CAST(0 AS DECIMAL(10, 2)) AS VALNEGOCIADO,
 	FORMA_PAGREC.DESCRRECEBIMENTO,
-	NOTAS_TERCEIROS.CHAVENFE
+	NOTAS_TERCEIROS.CHAVENFE,
+    (SELECT COALESCE(IDCTACONTABIL,0) FROM CONTABIL_MOVIMENTO
+                WHERE CONTABIL_MOVIMENTO.IDEMPRESA = CONTAS_PAGAR.IDEMPRESA AND
+                      CONTABIL_MOVIMENTO.IDPLANILHA = CONTAS_PAGAR.IDPLANILHA AND
+                      CONTABIL_MOVIMENTO.TIPONATUREZALCTO ='C'
+                      fetch first 1 rows only) AS IDCTACREDITO
 FROM
 	CONTAS_PAGAR
 LEFT OUTER JOIN CONTAS_PAGAR_SALDOS_VIEW ON
@@ -121,6 +127,8 @@ column(band=detail id=24 alignment="1" tabsequence=32766 border="0" color="33554
 column(band=detail id=17 alignment="1" tabsequence=32766 border="0" color="33554432" x="3058" y="8" height="64" width="466" format="[general]" html.valueishtml="0"  name=valliquidotitulo visible="1" editmask.mask="###,###,###.00" editmask.focusrectangle=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
 column(band=detail id=8 alignment="1" tabsequence=32766 border="0" color="33554432" x="2551" y="4" height="64" width="494" format="[general]" html.valueishtml="0"  name=valtitulo visible="1" editmask.mask="###,###,###.00" editmask.focusrectangle=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
 column(band=detail id=11 alignment="1" tabsequence=32766 border="0" color="33554432" x="1198" y="8" height="64" width="517" format="[general]" html.valueishtml="0"  name=idtitulo visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=35 alignment="0" tabsequence=0 border="0" color="33554432" x="4009" y="0" height="56" width="1806" html.valueishtml="0"  name=idctacredito visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=header alignment="0" text="Idctacredito" border="0" color="33554432" x="4005" y="4" height="76" width="1810" html.valueishtml="0"  name=idctacredito_t visible="1"  font.face="Tahoma" font.height="-12" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
 htmltable(border="1" )
 htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
 xhtmlgen() cssgen(sessionspecific="0" )

@@ -1,0 +1,15 @@
+HA$PBExportHeader$uf_null.srf
+global type uf_null from function_object
+end type
+
+forward prototypes
+global function any uf_null (any any_val, any any_val2)
+end prototypes
+
+global function any uf_null (any any_val, any any_val2);if isnull( any_val ) then
+	return	any_val2
+end if
+
+return	any_val
+end function
+
