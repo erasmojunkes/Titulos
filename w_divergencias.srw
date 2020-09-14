@@ -2,13 +2,15 @@ HA$PBExportHeader$w_divergencias.srw
 forward
 global type w_divergencias from window
 end type
+type cb_1 from commandbutton within w_divergencias
+end type
 type dw_divergencias from datawindow within w_divergencias
 end type
 type cb_cancelar from commandbutton within w_divergencias
 end type
 type cb_confirmar from commandbutton within w_divergencias
 end type
-type cb_imprimir from commandbutton within w_divergencias
+type cb_salvar from commandbutton within w_divergencias
 end type
 type gb_criticas from groupbox within w_divergencias
 end type
@@ -24,10 +26,11 @@ windowtype windowtype = response!
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
+cb_1 cb_1
 dw_divergencias dw_divergencias
 cb_cancelar cb_cancelar
 cb_confirmar cb_confirmar
-cb_imprimir cb_imprimir
+cb_salvar cb_salvar
 gb_criticas gb_criticas
 end type
 global w_divergencias w_divergencias
@@ -51,23 +54,26 @@ lds_Divergencias.Sharedata(dw_Divergencias)
 end event
 
 on w_divergencias.create
+this.cb_1=create cb_1
 this.dw_divergencias=create dw_divergencias
 this.cb_cancelar=create cb_cancelar
 this.cb_confirmar=create cb_confirmar
-this.cb_imprimir=create cb_imprimir
+this.cb_salvar=create cb_salvar
 this.gb_criticas=create gb_criticas
-this.Control[]={this.dw_divergencias,&
+this.Control[]={this.cb_1,&
+this.dw_divergencias,&
 this.cb_cancelar,&
 this.cb_confirmar,&
-this.cb_imprimir,&
+this.cb_salvar,&
 this.gb_criticas}
 end on
 
 on w_divergencias.destroy
+destroy(this.cb_1)
 destroy(this.dw_divergencias)
 destroy(this.cb_cancelar)
 destroy(this.cb_confirmar)
-destroy(this.cb_imprimir)
+destroy(this.cb_salvar)
 destroy(this.gb_criticas)
 end on
 
@@ -75,6 +81,24 @@ event closequery;If UpperBound(lst_Retorno.Long) = 0  Then
 	lst_Retorno.Long[1]  = -1
 	CloseWithReturn(This, lst_Retorno)
 End If
+end event
+
+type cb_1 from commandbutton within w_divergencias
+integer x = 530
+integer y = 2412
+integer width = 457
+integer height = 112
+integer taborder = 30
+integer textsize = -10
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "Imprimir"
+end type
+
+event clicked;inv_Funcoes.of_imprimir( dw_Divergencias )
 end event
 
 type dw_divergencias from datawindow within w_divergencias
@@ -128,7 +152,7 @@ event clicked;lst_Retorno.Long[1] = 1
 CloseWithReturn(Parent, lst_Retorno)
 end event
 
-type cb_imprimir from commandbutton within w_divergencias
+type cb_salvar from commandbutton within w_divergencias
 integer x = 27
 integer y = 2412
 integer width = 457
