@@ -187,7 +187,7 @@ For ll_For = 1 To ads_Arquivo.RowCount()
 	ls_DigitoTitulo = lds_ContasPagar.GetItemString(1, 'digitotitulo')
 	
 	//Se encontrou um titulo bloquado, ele cancela a baixa do registro
-	If inv_Funcoes.of_null(lds_ContasPagar.GetItemDecimal(1,'flagtitulobloquado'),'F') = 'T' Then 
+	If inv_Funcoes.of_null(lds_ContasPagar.GetItemString(1,'flagtitulobloqueado'),'F') = 'T' Then 
 		of_adicionar_divergencia(lds_Divergencias, ls_ChaveNFE,ll_Titulo ,ls_DigitoTitulo , 'O t$$HEX1$$ed00$$ENDHEX$$tulo se encontra bloquado e n$$HEX1$$e300$$ENDHEX$$o pode ser baixado.')
 		Continue
 	End If
@@ -202,7 +202,7 @@ For ll_For = 1 To ads_Arquivo.RowCount()
 	End If
 	
 	lde_ValorArquivo = Round(ads_Arquivo.GetItemDecimal(1,'valoricms'),2)
-	lde_SaldoTitulo = lds_ContasPagar.GetItemDecimal(1,'valliquidotit')
+	lde_SaldoTitulo = lds_ContasPagar.GetItemDecimal(1,'valliquidotitulo')
 	
 	If lde_ValorArquivo > lde_SaldoTitulo Then
 		of_adicionar_divergencia(lds_Divergencias, ls_ChaveNFE,ll_Titulo ,ls_DigitoTitulo , &
