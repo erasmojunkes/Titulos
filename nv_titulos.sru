@@ -137,6 +137,8 @@ ads_divergencias.SetItem(ll_NovaLinha, 'idtitulo', al_idTitulo )
 ads_divergencias.SetItem(ll_NovaLinha, 'digitotiulo', as_DigitoTitulo)
 ads_divergencias.SetItem(ll_NovaLinha, 'descricaodivergencia', as_DescricaoDivergencia)
 
+
+//teste
 end subroutine
 
 public function integer of_processar_titulos (datastore ads_arquivo, datawindow adw_contaspagar);String ls_ChaveNFE, ls_DigitoTitulo
