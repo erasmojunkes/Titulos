@@ -1033,3 +1033,63 @@
 14/09/2020 16:41:35.757 Tentativa de conexão com a última senha utilizada
 14/09/2020 16:41:36.052 Conexão a CISSODBC usuário dba estabelecida com sucesso
 14/09/2020 16:41:36.149 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:08:35.357 Conectando em CISSODBC
+15/09/2020 08:08:35.359 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:08:35.502 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:35.503 Utilizando senha #1
+15/09/2020 08:08:35.612 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:35.614 Utilizando senha #2
+15/09/2020 08:08:35.730 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:35.731 Utilizando senha #3
+15/09/2020 08:08:35.847 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:35.848 Utilizando senha #4
+15/09/2020 08:08:35.962 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:35.963 Utilizando senha #5
+15/09/2020 08:08:36.080 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:36.082 Utilizando senha #6
+15/09/2020 08:08:36.203 Conexão a CISSODBC usuário dba falhou. Motivo: SQLSTATE = 08001
+[IBM][CLI Driver] SQL30082N  O processamento de segurança falhou com a razão "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001
+
+15/09/2020 08:08:36.204 Utilizando senha #7
+15/09/2020 08:08:36.319 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:08:36.322 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:26:04.406 Conectando em CISSODBC
+15/09/2020 08:26:04.408 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:26:04.535 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:26:04.539 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:28:48.009 Conectando em CISSODBC
+15/09/2020 08:28:48.011 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:28:48.131 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:28:48.134 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:34:37.996 Conectando em CISSODBC
+15/09/2020 08:34:37.997 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:34:38.652 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:34:38.923 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:37:12.200 Conectando em CISSODBC
+15/09/2020 08:37:12.202 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:37:12.708 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:37:12.711 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:42:39.168 Conectando em CISSODBC
+15/09/2020 08:42:39.170 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:42:39.291 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:42:39.294 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:50:40.791 Conectando em CISSODBC
+15/09/2020 08:50:40.793 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:50:41.810 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:50:42.574 --> fnv_getsgbd: DB2 [1]
+15/09/2020 08:51:30.560 Conectando em CISSODBC
+15/09/2020 08:51:30.562 Tentativa de conexão com a última senha utilizada
+15/09/2020 08:51:30.672 Conexão a CISSODBC usuário dba estabelecida com sucesso
+15/09/2020 08:51:30.675 --> fnv_getsgbd: DB2 [1]
