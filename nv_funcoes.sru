@@ -12,13 +12,15 @@ forward prototypes
 public function integer of_verifica_cliente (long al_idclifor)
 public function string of_substituir (string as_texto, string as_remover, string as_inserir)
 public function any of_null (any any_valor, any any_valor2)
-public function DateTime of_get_data_atual ()
+public function datetime of_get_data_atual ()
 public function string of_abrir_arquivo (s_parametros ast_parametros)
-public function integer of_salva_pdf (datawindow adw_relatorio)
 public function integer of_imprimir (datawindow adw_relatorio)
 public function longlong of_getctdplanilha ()
 public function integer of_baixa_titulo (ref datawindow adw_contas_pagar, ref datawindow adw_contas_pagar_baixas, ref datawindow adw_contabil_movimento, long al_formapag)
 public function integer of_update (datawindow arg[])
+public function integer of_salvar_importado (datawindow adw_contas_receber)
+public function integer of_salvar_relatorio (datawindow adw_relatorio)
+public function integer of_verifica_forma_pagamento (long al_formapagamento)
 end prototypes
 
 public function integer of_verifica_cliente (long al_idclifor);Long ll_Count
@@ -65,16 +67,19 @@ end if
 return any_Valor
 end function
 
-public function DateTime of_get_data_atual ();DateTime ls_DataAtual
+public function datetime of_get_data_atual ();DateTime ls_DataAtual
 
 SELECT
-	CURRENT_TIMESTAMP
+	PARAMETROS.SISDATA
 INTO
 	:ls_DataAtual
-FROM 
-	DUMMY
-USING	
-	SQLCA;
+FROM
+	(
+	SELECT
+		GETDATE()
+	FROM
+		DUMMY) AS PARAMETROS(SISDATA);
+
 
 Return ls_DataAtual
 end function
@@ -112,36 +117,7 @@ end if
 Return string(ls_docname)
 end function
 
-public function integer of_salva_pdf (datawindow adw_relatorio);Integer li_NumeroArquivo
-String ls_arquivo, ls_Processando
-
-//GetFolder( 'Selecionar Pasta', Ref ls_arquivo )
-
-adw_Relatorio.ModIfy("DataWindow.Export.PDF.Distill.CustomPostScript=No") 
-adw_Relatorio.ModIfy("Datawindow.Export.PDF.Method = Distill!")
-adw_Relatorio.ModIfy("Datawindow.Export.PDF.XSLFOP.Print=No")
-
-ls_Processando = adw_Relatorio.describe("DataWindow.Processing")
-
-Choose Case ls_Processando
-	Case '!'
-		messagebox('Problemas de cria$$HEX2$$e700e300$$ENDHEX$$o','Erro ao criar o relat$$HEX1$$f300$$ENDHEX$$rio.',Exclamation!)
-		Return -1
-	Case ''
-		Return -1
-	Case Else
-		li_NumeroArquivo = adw_Relatorio.SaveAs(ls_arquivo, PDF!, True)
-		//li_NumeroArquivo = adw_Relatorio.SaveAs()
-		
-		If li_NumeroArquivo <= 0 then
-			messageBox('Erro ao criar arquivo', "VerIfique se o software GNU GhostScript esta instalado.~r~r"+&
-															"Erro: "+string(li_NumeroArquivo), stopSign! )
-			Return -1
-		end If
-End Choose
-end function
-
-public function integer of_imprimir (datawindow adw_relatorio);adw_relatorio.Print()
+public function integer of_imprimir (datawindow adw_relatorio);adw_relatorio.Print(True, True)
 
 return 1
 end function
@@ -193,9 +169,9 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 	adw_contas_pagar_baixas.SetItem(ll_new, 'IDPLANILHA', ll_idplanilha)	
 	adw_contas_pagar_baixas.SetItem(ll_new, 'ORIGEMMOVIMENTO', adw_contas_pagar.GetItemString(ll_for, 'ORIGEMMOVIMENTO'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'IDEMPRESABAIXA',adw_contas_pagar.GetItemnumber(ll_for, 'idempresa'))
-	adw_contas_pagar_baixas.SetItem(ll_new, 'DTPAGAMENTO',DATE(UF_DATAHORA()))
+	adw_contas_pagar_baixas.SetItem(ll_new, 'DTPAGAMENTO',DATE(of_get_data_atual( )))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'VALPAGAMENTOTITULO',adw_contas_pagar.GetItemDecimal(ll_for, 'valorpagamento'))
-	adw_contas_pagar_baixas.SetItem(ll_new, 'DTALTERACAO',DATE(UF_DATAHORA()))
+	adw_contas_pagar_baixas.SetItem(ll_new, 'DTALTERACAO',DATE(of_get_data_atual()))
 	
 
 
@@ -211,12 +187,12 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDEMPRESADESTINO', adw_contas_pagar.GetItemnumber(ll_for, 'idempresa'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDUSUARIO', 2)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'ORIGEMMOVIMENTO', adw_contas_pagar.GetItemString(ll_for, 'ORIGEMMOVIMENTO'))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTMOVIMENTO',DATE(UF_DATAHORA()))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTMOVIMENTO',DATE(of_get_data_atual( )))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'VALLANCAMENTO',adw_contas_pagar.GetItemDecimal(ll_for, 'valorpagamento'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'COMPLEMENTO','BAIXA DE TITULOS SEFAZ')
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZACTA','C') // REVER
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTLANCAMENTO',DATE(UF_DATAHORA()))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTULTIMAALTERACAO',UF_DATAHORA())
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTLANCAMENTO',DATE(of_get_data_atual( )))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTULTIMAALTERACAO',of_get_data_atual( ))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'FLAGEXPORTADO','F')
 	
 	
@@ -237,12 +213,12 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDEMPRESADESTINO', adw_contas_pagar.GetItemnumber(ll_for, 'idempresa'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDUSUARIO', 2)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'ORIGEMMOVIMENTO', adw_contas_pagar.GetItemString(ll_for, 'ORIGEMMOVIMENTO'))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTMOVIMENTO',DATE(UF_DATAHORA()))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTMOVIMENTO',DATE(of_get_data_atual( )))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'VALLANCAMENTO',adw_contas_pagar.GetItemDecimal(ll_for, 'valorpagamento'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'COMPLEMENTO','BAIXA DE TITULOS SEFAZ')
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZACTA',ls_tiponaturezadeb) // REVER
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTLANCAMENTO',DATE(UF_DATAHORA()))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTULTIMAALTERACAO',UF_DATAHORA())
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTLANCAMENTO',DATE(of_get_data_atual( )))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTULTIMAALTERACAO',of_get_data_atual( ))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'FLAGEXPORTADO','F')
 	
 	
@@ -292,6 +268,77 @@ Else
 End if
 
 return 1
+end function
+
+public function integer of_salvar_importado (datawindow adw_contas_receber);String ls_Diretorio, ls_Arquivo, ls_describe
+Integer li_filenum
+
+ls_Diretorio = gs_DirApp +'log_importacao'
+
+ls_arquivo = '\\' + 'IMPORTACAO_' + string(of_get_data_atual( ) ,'dd-mm-yyyy_hh-mm') + '.html'
+
+If not DirectoryExists (ls_Diretorio) Then
+	CreateDirectory (ls_Diretorio)
+end if
+
+ls_arquivo = ls_Diretorio + ls_arquivo
+
+ls_describe = adw_contas_receber.describe("DataWindow.Processing") //Testa se a datawindow
+
+choose case ls_describe
+	case '!'
+		messagebox('Erro criar arquivo','Ocorreram erros ao criar o relatelatorio logando o que foi importado.',Exclamation!)
+		return -1
+	case ''
+		return -1
+	case else
+		li_filenum = adw_contas_receber.SaveAs(ls_arquivo, HTMLTable!, false)
+		
+		// #34109
+		if li_filenum <= 0 then
+			messageBox( 'Cria$$HEX2$$e700e300$$ENDHEX$$o de Arquivo', 	'Erro ao criar arquivo '+ls_arquivo+".", stopSign! )
+			return -1
+		end if
+		
+		
+
+end choose
+
+return 1
+end function
+
+public function integer of_salvar_relatorio (datawindow adw_relatorio);Integer li_NumeroArquivo
+
+li_NumeroArquivo = adw_Relatorio.SaveAs('', HTMLTable!, True)
+
+If li_NumeroArquivo <= 0 then
+	messageBox('Erro ao criar arquivo', "Erro durante a cria$$HEX2$$e700e300$$ENDHEX$$o do arquivo" )
+//	messageBox('Erro ao criar arquivo', "VerIfique se o software GNU GhostScript esta instalado.~r~r"+&
+//													"Erro: "+string(li_NumeroArquivo), stopSign! )
+	Return -1
+end If
+
+end function
+
+public function integer of_verifica_forma_pagamento (long al_formapagamento);Long ll_Count
+
+SELECT 
+	COUNT(1)
+INTO 
+	:ll_Count
+FROM
+	FORMA_PAGREC 
+WHERE
+	IDRECEBIMENTO = :al_FormaPagamento
+USING 
+	SQLCA;
+
+If of_null( ll_Count, 0) > 0 Then
+	Return 1
+Else
+	Return -1
+End If
+
 end function
 
 on nv_funcoes.create

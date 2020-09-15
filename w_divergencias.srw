@@ -167,7 +167,7 @@ string facename = "Tahoma"
 string text = "Salvar"
 end type
 
-event clicked;inv_Funcoes.of_Salva_pdf( dw_Divergencias )
+event clicked;inv_Funcoes.of_salvar_relatorio( dw_Divergencias )
 end event
 
 type gb_criticas from groupbox within w_divergencias
