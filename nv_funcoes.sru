@@ -164,13 +164,14 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 	
 	adw_contas_pagar_baixas.SetItem(ll_new, 'IDEMPRESA', adw_contas_pagar.GetItemnumber(ll_for, 'idempresa'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'IDCLIFOR', adw_contas_pagar.GetItemnumber(ll_for, 'IDCLIFOR'))
+	adw_contas_pagar_baixas.SetItem(ll_new, 'IDTITULO', adw_contas_pagar.GetItemnumber(ll_for, 'IDTITULO'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'DIGITOTITULO', adw_contas_pagar.GetItemString(ll_for, 'DIGITOTITULO'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'SERIENOTA', adw_contas_pagar.GetItemString(ll_for, 'SERIENOTA'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'IDPLANILHA', ll_idplanilha)	
 	adw_contas_pagar_baixas.SetItem(ll_new, 'ORIGEMMOVIMENTO', adw_contas_pagar.GetItemString(ll_for, 'ORIGEMMOVIMENTO'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'IDEMPRESABAIXA',adw_contas_pagar.GetItemnumber(ll_for, 'idempresa'))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'DTPAGAMENTO',DATE(of_get_data_atual( )))
-	adw_contas_pagar_baixas.SetItem(ll_new, 'VALPAGAMENTOTITULO',adw_contas_pagar.GetItemDecimal(ll_for, 'valorpagamento'))
+	adw_contas_pagar_baixas.SetItem(ll_new, 'VALPAGAMENTOTITULO',dec(adw_contas_pagar.GetItemDecimal(ll_for, 'VALLIQUIDOTITULO')))
 	adw_contas_pagar_baixas.SetItem(ll_new, 'DTALTERACAO',DATE(of_get_data_atual()))
 	
 
@@ -179,7 +180,7 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 
 	
 	//CONTA CREDITO
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDCTACONTABIL',1)
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDCTACONTABIL',ll_idctacredito)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDPLANILHA',ll_idplanilha)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'NUMSEQUENCIA',1)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZALCTO','C')
@@ -188,14 +189,15 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDUSUARIO', 2)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'ORIGEMMOVIMENTO', adw_contas_pagar.GetItemString(ll_for, 'ORIGEMMOVIMENTO'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTMOVIMENTO',DATE(of_get_data_atual( )))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'VALLANCAMENTO',adw_contas_pagar.GetItemDecimal(ll_for, 'valorpagamento'))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'VALLANCAMENTO',adw_contas_pagar.GetItemDecimal(ll_for, 'VALLIQUIDOTITULO'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'COMPLEMENTO','BAIXA DE TITULOS SEFAZ')
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZACTA','C') // REVER
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZACTA',ls_tiponaturezacred) 
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTLANCAMENTO',DATE(of_get_data_atual( )))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTULTIMAALTERACAO',of_get_data_atual( ))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTHORAULTIMAALTERACAO',of_get_data_atual( ))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'FLAGEXPORTADO','F')
 	
 	
+	ll_newcontabil = adw_contabil_movimento.Insertrow(0)
 	
 	ll_idctadebito = adw_contas_pagar.GetItemnumber(ll_for,'idctacredito')
 
@@ -214,11 +216,11 @@ for ll_for = 1 to adw_contas_pagar.Rowcount()
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'IDUSUARIO', 2)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'ORIGEMMOVIMENTO', adw_contas_pagar.GetItemString(ll_for, 'ORIGEMMOVIMENTO'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTMOVIMENTO',DATE(of_get_data_atual( )))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'VALLANCAMENTO',adw_contas_pagar.GetItemDecimal(ll_for, 'valorpagamento'))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'VALLANCAMENTO',adw_contas_pagar.GetItemDecimal(ll_for, 'VALLIQUIDOTITULO'))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'COMPLEMENTO','BAIXA DE TITULOS SEFAZ')
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZACTA',ls_tiponaturezadeb) // REVER
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'TIPONATUREZACTA',ls_tiponaturezadeb)
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTLANCAMENTO',DATE(of_get_data_atual( )))
-	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTULTIMAALTERACAO',of_get_data_atual( ))
+	adw_contabil_movimento.SetItem(ll_newcontabil, 'DTHORAULTIMAALTERACAO',of_get_data_atual( ))
 	adw_contabil_movimento.SetItem(ll_newcontabil, 'FLAGEXPORTADO','F')
 	
 	
@@ -308,8 +310,14 @@ return 1
 end function
 
 public function integer of_salvar_relatorio (datawindow adw_relatorio);Integer li_NumeroArquivo
+String ls_name, ls_arquivo
 
-li_NumeroArquivo = adw_Relatorio.SaveAs('', HTMLTable!, True)
+
+ls_arquivo = '\\' + 'CRITICAS_' + string(of_get_data_atual( ) ,'dd-mm-yyyy_hh-mm') + '.html'
+
+li_NumeroArquivo = adw_Relatorio.SaveAs(gs_DirApp + ls_arquivo, HTMLTable!, True)
+
+
 
 If li_NumeroArquivo <= 0 then
 	messageBox('Erro ao criar arquivo', "Erro durante a cria$$HEX2$$e700e300$$ENDHEX$$o do arquivo" )
